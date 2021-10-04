@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "elegirDia", "elegirDia\elegirDia.vbproj", "{EBE54E37-61BA-4207-8C61-86E40128DE5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBE54E37-61BA-4207-8C61-86E40128DE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE54E37-61BA-4207-8C61-86E40128DE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE54E37-61BA-4207-8C61-86E40128DE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE54E37-61BA-4207-8C61-86E40128DE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {087CE98C-A21B-417A-989C-F6EC9D2E79E1}
+	EndGlobalSection
+EndGlobal

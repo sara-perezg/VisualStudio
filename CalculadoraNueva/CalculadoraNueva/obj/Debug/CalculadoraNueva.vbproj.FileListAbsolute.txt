@@ -1,0 +1,12 @@
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\bin\Debug\CalculadoraNueva.exe.config
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\bin\Debug\CalculadoraNueva.exe
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\bin\Debug\CalculadoraNueva.pdb
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\bin\Debug\CalculadoraNueva.xml
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\obj\Debug\CalculadoraNueva.vbproj.AssemblyReference.cache
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\obj\Debug\CalculadoraNueva.Form1.resources
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\obj\Debug\CalculadoraNueva.Resources.resources
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\obj\Debug\CalculadoraNueva.vbproj.GenerateResource.cache
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\obj\Debug\CalculadoraNueva.vbproj.CoreCompileInputs.cache
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\obj\Debug\CalculadoraNueva.exe
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\obj\Debug\CalculadoraNueva.xml
+C:\Users\sarap\Github\VisualStudio\CalculadoraNueva\CalculadoraNueva\obj\Debug\CalculadoraNueva.pdb

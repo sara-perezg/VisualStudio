@@ -1,0 +1,9 @@
+C:\Users\sarap\Github\VisualStudio\elegirDia\elegirDia\obj\Debug\netcoreapp3.1\elegirDia.vbproj.AssemblyReference.cache
+C:\Users\sarap\Github\VisualStudio\elegirDia\elegirDia\obj\Debug\netcoreapp3.1\elegirDia.Form1.resources
+C:\Users\sarap\Github\VisualStudio\elegirDia\elegirDia\obj\Debug\netcoreapp3.1\elegirDia.vbproj.GenerateResource.cache
+C:\Users\sarap\Github\VisualStudio\elegirDia\elegirDia\obj\Debug\netcoreapp3.1\elegirDia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sarap\Github\VisualStudio\elegirDia\elegirDia\obj\Debug\netcoreapp3.1\elegirDia.AssemblyInfoInputs.cache
+C:\Users\sarap\Github\VisualStudio\elegirDia\elegirDia\obj\Debug\netcoreapp3.1\elegirDia.AssemblyInfo.vb
+C:\Users\sarap\Github\VisualStudio\elegirDia\elegirDia\obj\Debug\netcoreapp3.1\elegirDia.vbproj.CoreCompileInputs.cache
+C:\Users\sarap\Github\VisualStudio\elegirDia\elegirDia\obj\Debug\netcoreapp3.1\elegirDia.elegirDia.resources
+C:\Users\sarap\Github\VisualStudio\elegirDia\elegirDia\obj\Debug\netcoreapp3.1\elegirDia.Form2.resources
