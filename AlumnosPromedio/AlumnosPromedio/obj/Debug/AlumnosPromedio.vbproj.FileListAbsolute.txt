@@ -1,0 +1,11 @@
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\bin\Debug\AlumnosPromedio.exe.config
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\bin\Debug\AlumnosPromedio.exe
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\bin\Debug\AlumnosPromedio.pdb
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\bin\Debug\AlumnosPromedio.xml
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\obj\Debug\AlumnosPromedio.Promedio.resources
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\obj\Debug\AlumnosPromedio.Resources.resources
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\obj\Debug\AlumnosPromedio.vbproj.GenerateResource.cache
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\obj\Debug\AlumnosPromedio.vbproj.CoreCompileInputs.cache
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\obj\Debug\AlumnosPromedio.exe
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\obj\Debug\AlumnosPromedio.xml
+C:\Users\sarap\Github\VisualStudio\AlumnosPromedio\AlumnosPromedio\obj\Debug\AlumnosPromedio.pdb
