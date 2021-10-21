@@ -1,0 +1,12 @@
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\bin\Debug\ejercicio01_PerezSara.exe.config
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\bin\Debug\ejercicio01_PerezSara.exe
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\bin\Debug\ejercicio01_PerezSara.pdb
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\bin\Debug\ejercicio01_PerezSara.xml
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\obj\Debug\ejercicio01_PerezSara.vbproj.AssemblyReference.cache
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\obj\Debug\ejercicio01_PerezSara.Form1.resources
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\obj\Debug\ejercicio01_PerezSara.Resources.resources
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\obj\Debug\ejercicio01_PerezSara.vbproj.GenerateResource.cache
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\obj\Debug\ejercicio01_PerezSara.vbproj.CoreCompileInputs.cache
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\obj\Debug\ejercicio01_PerezSara.exe
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\obj\Debug\ejercicio01_PerezSara.xml
+C:\Users\sarap\Github\VisualStudio\ejercicio01_PerezSara\ejercicio01_PerezSara\obj\Debug\ejercicio01_PerezSara.pdb

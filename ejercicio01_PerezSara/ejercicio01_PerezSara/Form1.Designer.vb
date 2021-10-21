@@ -23,13 +23,13 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.rbNaranja = New System.Windows.Forms.RadioButton()
-        Me.rbAmarillo = New System.Windows.Forms.RadioButton()
-        Me.rbBlanco = New System.Windows.Forms.RadioButton()
         Me.rbAzul = New System.Windows.Forms.RadioButton()
-        Me.rbArriba = New System.Windows.Forms.RadioButton()
+        Me.rbBlanco = New System.Windows.Forms.RadioButton()
+        Me.rbAmarillo = New System.Windows.Forms.RadioButton()
+        Me.rbNaranja = New System.Windows.Forms.RadioButton()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.rbAbajo = New System.Windows.Forms.RadioButton()
+        Me.rbArriba = New System.Windows.Forms.RadioButton()
         Me.txtBColores = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -48,38 +48,16 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Colores"
         '
-        'GroupBox2
+        'rbAzul
         '
-        Me.GroupBox2.Controls.Add(Me.rbAbajo)
-        Me.GroupBox2.Controls.Add(Me.rbArriba)
-        Me.GroupBox2.Location = New System.Drawing.Point(57, 254)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 168)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Posicion"
-        '
-        'rbNaranja
-        '
-        Me.rbNaranja.AutoSize = True
-        Me.rbNaranja.Location = New System.Drawing.Point(23, 41)
-        Me.rbNaranja.Name = "rbNaranja"
-        Me.rbNaranja.Size = New System.Drawing.Size(79, 21)
-        Me.rbNaranja.TabIndex = 2
-        Me.rbNaranja.TabStop = True
-        Me.rbNaranja.Text = "Naranja"
-        Me.rbNaranja.UseVisualStyleBackColor = True
-        '
-        'rbAmarillo
-        '
-        Me.rbAmarillo.AutoSize = True
-        Me.rbAmarillo.Location = New System.Drawing.Point(23, 82)
-        Me.rbAmarillo.Name = "rbAmarillo"
-        Me.rbAmarillo.Size = New System.Drawing.Size(79, 21)
-        Me.rbAmarillo.TabIndex = 3
-        Me.rbAmarillo.TabStop = True
-        Me.rbAmarillo.Text = "Amarillo"
-        Me.rbAmarillo.UseVisualStyleBackColor = True
+        Me.rbAzul.AutoSize = True
+        Me.rbAzul.Location = New System.Drawing.Point(23, 155)
+        Me.rbAzul.Name = "rbAzul"
+        Me.rbAzul.Size = New System.Drawing.Size(56, 21)
+        Me.rbAzul.TabIndex = 5
+        Me.rbAzul.TabStop = True
+        Me.rbAzul.Text = "Azul"
+        Me.rbAzul.UseVisualStyleBackColor = True
         '
         'rbBlanco
         '
@@ -92,27 +70,38 @@ Partial Class Form1
         Me.rbBlanco.Text = "Blanco"
         Me.rbBlanco.UseVisualStyleBackColor = True
         '
-        'rbAzul
+        'rbAmarillo
         '
-        Me.rbAzul.AutoSize = True
-        Me.rbAzul.Location = New System.Drawing.Point(23, 155)
-        Me.rbAzul.Name = "rbAzul"
-        Me.rbAzul.Size = New System.Drawing.Size(56, 21)
-        Me.rbAzul.TabIndex = 5
-        Me.rbAzul.TabStop = True
-        Me.rbAzul.Text = "Azul"
-        Me.rbAzul.UseVisualStyleBackColor = True
+        Me.rbAmarillo.AutoSize = True
+        Me.rbAmarillo.Location = New System.Drawing.Point(23, 82)
+        Me.rbAmarillo.Name = "rbAmarillo"
+        Me.rbAmarillo.Size = New System.Drawing.Size(79, 21)
+        Me.rbAmarillo.TabIndex = 3
+        Me.rbAmarillo.TabStop = True
+        Me.rbAmarillo.Text = "Amarillo"
+        Me.rbAmarillo.UseVisualStyleBackColor = True
         '
-        'rbArriba
+        'rbNaranja
         '
-        Me.rbArriba.AutoSize = True
-        Me.rbArriba.Location = New System.Drawing.Point(23, 58)
-        Me.rbArriba.Name = "rbArriba"
-        Me.rbArriba.Size = New System.Drawing.Size(67, 21)
-        Me.rbArriba.TabIndex = 4
-        Me.rbArriba.TabStop = True
-        Me.rbArriba.Text = "Arriba"
-        Me.rbArriba.UseVisualStyleBackColor = True
+        Me.rbNaranja.AutoSize = True
+        Me.rbNaranja.Location = New System.Drawing.Point(23, 41)
+        Me.rbNaranja.Name = "rbNaranja"
+        Me.rbNaranja.Size = New System.Drawing.Size(79, 21)
+        Me.rbNaranja.TabIndex = 2
+        Me.rbNaranja.TabStop = True
+        Me.rbNaranja.Text = "Naranja"
+        Me.rbNaranja.UseVisualStyleBackColor = True
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.rbAbajo)
+        Me.GroupBox2.Controls.Add(Me.rbArriba)
+        Me.GroupBox2.Location = New System.Drawing.Point(57, 254)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(200, 168)
+        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Posicion"
         '
         'rbAbajo
         '
@@ -125,11 +114,22 @@ Partial Class Form1
         Me.rbAbajo.Text = "Abajo"
         Me.rbAbajo.UseVisualStyleBackColor = True
         '
+        'rbArriba
+        '
+        Me.rbArriba.AutoSize = True
+        Me.rbArriba.Location = New System.Drawing.Point(23, 58)
+        Me.rbArriba.Name = "rbArriba"
+        Me.rbArriba.Size = New System.Drawing.Size(67, 21)
+        Me.rbArriba.TabIndex = 4
+        Me.rbArriba.TabStop = True
+        Me.rbArriba.Text = "Arriba"
+        Me.rbArriba.UseVisualStyleBackColor = True
+        '
         'txtBColores
         '
         Me.txtBColores.BackColor = System.Drawing.Color.Wheat
         Me.txtBColores.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.txtBColores.Location = New System.Drawing.Point(299, 30)
+        Me.txtBColores.Location = New System.Drawing.Point(284, 30)
         Me.txtBColores.Multiline = True
         Me.txtBColores.Name = "txtBColores"
         Me.txtBColores.Size = New System.Drawing.Size(315, 162)
