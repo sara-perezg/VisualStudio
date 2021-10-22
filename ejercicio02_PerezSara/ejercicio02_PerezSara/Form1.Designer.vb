@@ -31,6 +31,7 @@ Partial Class Form1
         Me.btnLoadImage = New System.Windows.Forms.Button()
         Me.btnSubmit = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.ofd = New System.Windows.Forms.OpenFileDialog()
         CType(Me.pbImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -111,6 +112,10 @@ Partial Class Form1
         Me.btnExit.Text = "Salir"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'ofd
+        '
+        Me.ofd.FileName = "OpenFileDialog1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -143,4 +148,5 @@ Partial Class Form1
     Friend WithEvents btnLoadImage As Button
     Friend WithEvents btnSubmit As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents ofd As OpenFileDialog
 End Class
