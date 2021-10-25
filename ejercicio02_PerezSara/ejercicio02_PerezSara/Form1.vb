@@ -6,7 +6,7 @@
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        If txtBPassword.Text = "" Or txtBName.Text = "" Then
+        If txtBPassword.Text = "" Or txtBName.Text = "" Or IsNothing(pbImage.Image) Then
             MsgBox("Tiene que rellenar todos los campos")
         Else
             MsgBox("Perfil actualizado correctamente!")
