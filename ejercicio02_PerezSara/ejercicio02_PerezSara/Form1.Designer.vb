@@ -22,6 +22,7 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.lblName = New System.Windows.Forms.Label()
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.txtBName = New System.Windows.Forms.TextBox()
@@ -38,31 +39,41 @@ Partial Class Form1
         'lblName
         '
         Me.lblName.AutoSize = True
+        Me.lblName.BackColor = System.Drawing.Color.Transparent
+        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.lblName.Location = New System.Drawing.Point(23, 62)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(58, 17)
+        Me.lblName.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lblName.Size = New System.Drawing.Size(64, 17)
         Me.lblName.TabIndex = 0
         Me.lblName.Text = "Nombre"
         '
         'lblPassword
         '
         Me.lblPassword.AutoSize = True
+        Me.lblPassword.BackColor = System.Drawing.Color.Transparent
+        Me.lblPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPassword.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.lblPassword.Location = New System.Drawing.Point(23, 122)
         Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(81, 17)
+        Me.lblPassword.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lblPassword.Size = New System.Drawing.Size(91, 17)
         Me.lblPassword.TabIndex = 1
         Me.lblPassword.Text = "Contraseña"
         '
         'txtBName
         '
-        Me.txtBName.Location = New System.Drawing.Point(110, 59)
+        Me.txtBName.BackColor = System.Drawing.Color.FloralWhite
+        Me.txtBName.Location = New System.Drawing.Point(120, 59)
         Me.txtBName.Name = "txtBName"
         Me.txtBName.Size = New System.Drawing.Size(100, 22)
         Me.txtBName.TabIndex = 2
         '
         'txtBPassword
         '
-        Me.txtBPassword.Location = New System.Drawing.Point(110, 117)
+        Me.txtBPassword.BackColor = System.Drawing.Color.FloralWhite
+        Me.txtBPassword.Location = New System.Drawing.Point(120, 117)
         Me.txtBPassword.MaxLength = 6
         Me.txtBPassword.Name = "txtBPassword"
         Me.txtBPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -74,7 +85,7 @@ Partial Class Form1
         Me.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpDate.Location = New System.Drawing.Point(26, 178)
         Me.dtpDate.Name = "dtpDate"
-        Me.dtpDate.Size = New System.Drawing.Size(184, 22)
+        Me.dtpDate.Size = New System.Drawing.Size(194, 22)
         Me.dtpDate.TabIndex = 4
         '
         'pbImage
@@ -87,30 +98,36 @@ Partial Class Form1
         '
         'btnLoadImage
         '
+        Me.btnLoadImage.BackColor = System.Drawing.Color.FloralWhite
+        Me.btnLoadImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLoadImage.Location = New System.Drawing.Point(236, 170)
         Me.btnLoadImage.Name = "btnLoadImage"
         Me.btnLoadImage.Size = New System.Drawing.Size(110, 45)
         Me.btnLoadImage.TabIndex = 6
         Me.btnLoadImage.Text = "Cargar Imagen"
-        Me.btnLoadImage.UseVisualStyleBackColor = True
+        Me.btnLoadImage.UseVisualStyleBackColor = False
         '
         'btnSubmit
         '
+        Me.btnSubmit.BackColor = System.Drawing.Color.FloralWhite
+        Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSubmit.Location = New System.Drawing.Point(98, 244)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(75, 37)
         Me.btnSubmit.TabIndex = 7
         Me.btnSubmit.Text = "Submit"
-        Me.btnSubmit.UseVisualStyleBackColor = True
+        Me.btnSubmit.UseVisualStyleBackColor = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.FloralWhite
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Location = New System.Drawing.Point(204, 244)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 37)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "Salir"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'ofd
         '
@@ -120,6 +137,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(382, 353)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnSubmit)

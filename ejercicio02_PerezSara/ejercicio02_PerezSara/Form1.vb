@@ -18,6 +18,10 @@
             MsgBox("Error el usuario tiene que ser mayor de edad")
         End If
 
+        If txtBPassword.Text.Length < 6 Then
+            MsgBox("Error. La contraseña tiene que tener al menos 6 caracteres")
+        End If
+
 
     End Sub
 
@@ -29,4 +33,9 @@
             pbImage.SizeMode = PictureBoxSizeMode.StretchImage
         End If
     End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Close()
+    End Sub
+
 End Class
