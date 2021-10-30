@@ -88,6 +88,7 @@ Partial Class FormInicio
         '
         'ErrorProvider1
         '
+        Me.ErrorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
         Me.ErrorProvider1.ContainerControl = Me
         '
         'FormInicio

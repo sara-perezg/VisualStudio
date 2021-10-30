@@ -1,9 +1,5 @@
 ﻿Public Class FormPrestamo
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub FormPrestamo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnBack.Click
 
     End Sub
 End Class
