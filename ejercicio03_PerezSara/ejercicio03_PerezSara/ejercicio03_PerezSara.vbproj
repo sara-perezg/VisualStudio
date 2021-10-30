@@ -80,6 +80,12 @@
       <DependentUpon>FormInicio.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormPrestamo.Designer.vb">
+      <DependentUpon>FormPrestamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrestamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,6 +105,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrestamo.resx">
+      <DependentUpon>FormPrestamo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -10,3 +10,4 @@ C:\Users\sarap\Github\VisualStudio\ejercicio03_PerezSara\ejercicio03_PerezSara\o
 C:\Users\sarap\Github\VisualStudio\ejercicio03_PerezSara\ejercicio03_PerezSara\obj\Debug\ejercicio03_PerezSara.exe
 C:\Users\sarap\Github\VisualStudio\ejercicio03_PerezSara\ejercicio03_PerezSara\obj\Debug\ejercicio03_PerezSara.xml
 C:\Users\sarap\Github\VisualStudio\ejercicio03_PerezSara\ejercicio03_PerezSara\obj\Debug\ejercicio03_PerezSara.pdb
+C:\Users\sarap\Github\VisualStudio\ejercicio03_PerezSara\ejercicio03_PerezSara\obj\Debug\ejercicio03_PerezSara.FormPrestamo.resources
