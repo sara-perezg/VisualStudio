@@ -25,19 +25,19 @@ Partial Class FormPrestamo
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbOrigen = New System.Windows.Forms.ComboBox()
+        Me.cbRaza = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtMonto = New System.Windows.Forms.TextBox()
+        Me.cbCuotas = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btnConSolicitud = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.cbRaza = New System.Windows.Forms.ComboBox()
-        Me.cbOrigen = New System.Windows.Forms.ComboBox()
-        Me.cbCuotas = New System.Windows.Forms.ComboBox()
-        Me.txtMonto = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -46,7 +46,7 @@ Partial Class FormPrestamo
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(98, 68)
+        Me.Label1.Location = New System.Drawing.Point(81, 67)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(156, 31)
         Me.Label1.TabIndex = 0
@@ -56,7 +56,7 @@ Partial Class FormPrestamo
         '
         Me.lblName.AutoSize = True
         Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.Location = New System.Drawing.Point(260, 68)
+        Me.lblName.Location = New System.Drawing.Point(243, 67)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(0, 31)
         Me.lblName.TabIndex = 1
@@ -73,6 +73,40 @@ Partial Class FormPrestamo
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         '
+        'cbOrigen
+        '
+        Me.cbOrigen.FormattingEnabled = True
+        Me.cbOrigen.Location = New System.Drawing.Point(132, 82)
+        Me.cbOrigen.Name = "cbOrigen"
+        Me.cbOrigen.Size = New System.Drawing.Size(121, 24)
+        Me.cbOrigen.TabIndex = 3
+        '
+        'cbRaza
+        '
+        Me.cbRaza.FormattingEnabled = True
+        Me.cbRaza.Location = New System.Drawing.Point(132, 28)
+        Me.cbRaza.Name = "cbRaza"
+        Me.cbRaza.Size = New System.Drawing.Size(121, 24)
+        Me.cbRaza.TabIndex = 2
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(14, 82)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(112, 17)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "Lugar de Origen"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(76, 31)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(41, 17)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Raza"
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.txtMonto)
@@ -84,6 +118,39 @@ Partial Class FormPrestamo
         Me.GroupBox2.Size = New System.Drawing.Size(310, 133)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
+        '
+        'txtMonto
+        '
+        Me.txtMonto.Location = New System.Drawing.Point(170, 31)
+        Me.txtMonto.Name = "txtMonto"
+        Me.txtMonto.Size = New System.Drawing.Size(121, 22)
+        Me.txtMonto.TabIndex = 3
+        '
+        'cbCuotas
+        '
+        Me.cbCuotas.FormattingEnabled = True
+        Me.cbCuotas.Location = New System.Drawing.Point(170, 82)
+        Me.cbCuotas.Name = "cbCuotas"
+        Me.cbCuotas.Size = New System.Drawing.Size(121, 24)
+        Me.cbCuotas.TabIndex = 2
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(92, 82)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(52, 17)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Cuotas"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(24, 31)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(133, 17)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Monto del prestamo"
         '
         'Label3
         '
@@ -97,7 +164,7 @@ Partial Class FormPrestamo
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(465, 130)
+        Me.Label4.Location = New System.Drawing.Point(419, 130)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(145, 17)
         Me.Label4.TabIndex = 5
@@ -121,73 +188,6 @@ Partial Class FormPrestamo
         Me.btnBack.Text = "Volver"
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(76, 31)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 17)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Raza"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(14, 82)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(112, 17)
-        Me.Label5.TabIndex = 1
-        Me.Label5.Text = "Lugar de Origen"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(24, 31)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(133, 17)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Monto del prestamo"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(92, 82)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(52, 17)
-        Me.Label7.TabIndex = 1
-        Me.Label7.Text = "Cuotas"
-        '
-        'cbRaza
-        '
-        Me.cbRaza.FormattingEnabled = True
-        Me.cbRaza.Location = New System.Drawing.Point(132, 28)
-        Me.cbRaza.Name = "cbRaza"
-        Me.cbRaza.Size = New System.Drawing.Size(121, 24)
-        Me.cbRaza.TabIndex = 2
-        '
-        'cbOrigen
-        '
-        Me.cbOrigen.FormattingEnabled = True
-        Me.cbOrigen.Location = New System.Drawing.Point(132, 82)
-        Me.cbOrigen.Name = "cbOrigen"
-        Me.cbOrigen.Size = New System.Drawing.Size(121, 24)
-        Me.cbOrigen.TabIndex = 3
-        '
-        'cbCuotas
-        '
-        Me.cbCuotas.FormattingEnabled = True
-        Me.cbCuotas.Location = New System.Drawing.Point(170, 82)
-        Me.cbCuotas.Name = "cbCuotas"
-        Me.cbCuotas.Size = New System.Drawing.Size(121, 24)
-        Me.cbCuotas.TabIndex = 2
-        '
-        'txtMonto
-        '
-        Me.txtMonto.Location = New System.Drawing.Point(170, 31)
-        Me.txtMonto.Name = "txtMonto"
-        Me.txtMonto.Size = New System.Drawing.Size(121, 22)
-        Me.txtMonto.TabIndex = 3
-        '
         'FormPrestamo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -204,7 +204,7 @@ Partial Class FormPrestamo
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "FormPrestamo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Prestamo"
+        Me.Text = "Prestamos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
