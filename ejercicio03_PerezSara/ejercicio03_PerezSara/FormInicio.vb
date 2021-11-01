@@ -18,4 +18,10 @@
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
         Close()
     End Sub
+
+    Private Sub txtBName_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtBName.KeyPress
+        If Char.IsNumber(e.KeyChar) Or Char.IsSymbol(e.KeyChar) Or Char.IsWhiteSpace(e.KeyChar) Or Char.IsPunctuation(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
 End Class
