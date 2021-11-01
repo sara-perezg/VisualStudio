@@ -84,6 +84,7 @@ Partial Class FormPrestamo
         '
         'cbRaza
         '
+        Me.cbRaza.CausesValidation = False
         Me.cbRaza.FormattingEnabled = True
         Me.cbRaza.Items.AddRange(New Object() {"Hombre", "Elfo", "Enano", "Orco", "Troll"})
         Me.cbRaza.Location = New System.Drawing.Point(132, 28)
