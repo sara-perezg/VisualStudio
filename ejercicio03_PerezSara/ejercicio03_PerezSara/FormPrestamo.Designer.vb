@@ -76,6 +76,7 @@ Partial Class FormPrestamo
         'cbOrigen
         '
         Me.cbOrigen.FormattingEnabled = True
+        Me.cbOrigen.Items.AddRange(New Object() {"La Comarca", "Mordor", "Isengar", "Moria", "Ciudad Bajo la Montaña"})
         Me.cbOrigen.Location = New System.Drawing.Point(132, 82)
         Me.cbOrigen.Name = "cbOrigen"
         Me.cbOrigen.Size = New System.Drawing.Size(121, 24)
@@ -84,6 +85,7 @@ Partial Class FormPrestamo
         'cbRaza
         '
         Me.cbRaza.FormattingEnabled = True
+        Me.cbRaza.Items.AddRange(New Object() {"Hombre", "Elfo", "Enano", "Orco", "Troll"})
         Me.cbRaza.Location = New System.Drawing.Point(132, 28)
         Me.cbRaza.Name = "cbRaza"
         Me.cbRaza.Size = New System.Drawing.Size(121, 24)
@@ -129,6 +131,7 @@ Partial Class FormPrestamo
         'cbCuotas
         '
         Me.cbCuotas.FormattingEnabled = True
+        Me.cbCuotas.Items.AddRange(New Object() {"6 meses", "9 meses", "12 meses", "24 meses", "32 meses"})
         Me.cbCuotas.Location = New System.Drawing.Point(170, 82)
         Me.cbCuotas.Name = "cbCuotas"
         Me.cbCuotas.Size = New System.Drawing.Size(121, 24)
