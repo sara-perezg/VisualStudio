@@ -23,6 +23,7 @@ Partial Class FormInicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormInicio))
         Me.btnPrestamo = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -36,27 +37,31 @@ Partial Class FormInicio
         '
         'btnPrestamo
         '
+        Me.btnPrestamo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrestamo.Location = New System.Drawing.Point(361, 263)
         Me.btnPrestamo.Name = "btnPrestamo"
         Me.btnPrestamo.Size = New System.Drawing.Size(117, 59)
         Me.btnPrestamo.TabIndex = 0
         Me.btnPrestamo.Text = "Solicitar Prestamo"
-        Me.btnPrestamo.UseVisualStyleBackColor = True
+        Me.btnPrestamo.UseVisualStyleBackColor = False
         '
         'btnSalir
         '
+        Me.btnSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSalir.Location = New System.Drawing.Point(638, 355)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(101, 53)
         Me.btnSalir.TabIndex = 1
         Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
+        Me.btnSalir.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(202, 75)
+        Me.Label1.Location = New System.Drawing.Point(213, 85)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(465, 46)
         Me.Label1.TabIndex = 2
@@ -64,18 +69,21 @@ Partial Class FormInicio
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(47, 32)
+        Me.PictureBox1.Image = Global.ejercicio03_PerezSara.My.Resources.Resources.castle
+        Me.PictureBox1.InitialImage = Global.ejercicio03_PerezSara.My.Resources.Resources.castle
+        Me.PictureBox1.Location = New System.Drawing.Point(69, 39)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(125, 117)
+        Me.PictureBox1.Size = New System.Drawing.Size(127, 123)
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
         'lblName
         '
         Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblName.Location = New System.Drawing.Point(135, 199)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(81, 17)
+        Me.lblName.Size = New System.Drawing.Size(114, 21)
         Me.lblName.TabIndex = 4
         Me.lblName.Text = "Su nombre:"
         '
@@ -95,6 +103,7 @@ Partial Class FormInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(782, 453)
         Me.Controls.Add(Me.txtBName)
         Me.Controls.Add(Me.lblName)
@@ -103,6 +112,7 @@ Partial Class FormInicio
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnPrestamo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormInicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"

@@ -22,6 +22,7 @@ Partial Class FormPrestamo
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrestamo))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -45,7 +46,9 @@ Partial Class FormPrestamo
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FloralWhite
         Me.Label1.Location = New System.Drawing.Point(81, 67)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(156, 31)
@@ -55,7 +58,9 @@ Partial Class FormPrestamo
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.BackColor = System.Drawing.Color.Transparent
+        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.FloralWhite
         Me.lblName.Location = New System.Drawing.Point(243, 67)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(0, 31)
@@ -63,6 +68,7 @@ Partial Class FormPrestamo
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.cbOrigen)
         Me.GroupBox1.Controls.Add(Me.cbRaza)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -112,6 +118,7 @@ Partial Class FormPrestamo
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GroupBox2.Controls.Add(Me.txtMonto)
         Me.GroupBox2.Controls.Add(Me.cbCuotas)
         Me.GroupBox2.Controls.Add(Me.Label7)
@@ -159,43 +166,54 @@ Partial Class FormPrestamo
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(84, 130)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FloralWhite
+        Me.Label3.Location = New System.Drawing.Point(84, 120)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(120, 17)
+        Me.Label3.Size = New System.Drawing.Size(136, 17)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Datos Personales"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(419, 130)
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FloralWhite
+        Me.Label4.Location = New System.Drawing.Point(419, 120)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(145, 17)
+        Me.Label4.Size = New System.Drawing.Size(166, 17)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Detalles del prestamo"
         '
         'btnConSolicitud
         '
+        Me.btnConSolicitud.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnConSolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConSolicitud.Location = New System.Drawing.Point(351, 352)
         Me.btnConSolicitud.Name = "btnConSolicitud"
         Me.btnConSolicitud.Size = New System.Drawing.Size(117, 56)
         Me.btnConSolicitud.TabIndex = 6
         Me.btnConSolicitud.Text = "Confirmar Solicitud"
-        Me.btnConSolicitud.UseVisualStyleBackColor = True
+        Me.btnConSolicitud.UseVisualStyleBackColor = False
         '
         'btnBack
         '
+        Me.btnBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBack.Location = New System.Drawing.Point(682, 409)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(75, 32)
         Me.btnBack.TabIndex = 7
         Me.btnBack.Text = "Volver"
-        Me.btnBack.UseVisualStyleBackColor = True
+        Me.btnBack.UseVisualStyleBackColor = False
         '
         'FormPrestamo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.ejercicio03_PerezSara.My.Resources.Resources.cropped_800_500_943385
         Me.ClientSize = New System.Drawing.Size(782, 453)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnConSolicitud)
@@ -206,6 +224,7 @@ Partial Class FormPrestamo
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormPrestamo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Prestamos"
