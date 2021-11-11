@@ -44,8 +44,11 @@ Partial Class fVentaProducto
         Me.txtSubTotal = New System.Windows.Forms.TextBox()
         Me.txtIva = New System.Windows.Forms.TextBox()
         Me.txtTotal = New System.Windows.Forms.TextBox()
+        Me.dgvProductos = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -63,9 +66,9 @@ Partial Class fVentaProducto
         Me.GroupBox1.Controls.Add(Me.txtDescripcion)
         Me.GroupBox1.Controls.Add(Me.txtCodigo)
         Me.GroupBox1.Location = New System.Drawing.Point(38, 27)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(544, 122)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
@@ -124,7 +127,7 @@ Partial Class fVentaProducto
         'btnLimpiar
         '
         Me.btnLimpiar.Location = New System.Drawing.Point(150, 82)
-        Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnLimpiar.Name = "btnLimpiar"
         Me.btnLimpiar.Size = New System.Drawing.Size(103, 24)
         Me.btnLimpiar.TabIndex = 13
@@ -134,7 +137,7 @@ Partial Class fVentaProducto
         'btnAgregar
         '
         Me.btnAgregar.Location = New System.Drawing.Point(36, 82)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(94, 24)
         Me.btnAgregar.TabIndex = 11
@@ -144,7 +147,7 @@ Partial Class fVentaProducto
         'txtPrecioTotal
         '
         Me.txtPrecioTotal.Location = New System.Drawing.Point(427, 54)
-        Me.txtPrecioTotal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPrecioTotal.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPrecioTotal.Name = "txtPrecioTotal"
         Me.txtPrecioTotal.Size = New System.Drawing.Size(76, 20)
         Me.txtPrecioTotal.TabIndex = 9
@@ -152,7 +155,7 @@ Partial Class fVentaProducto
         'txtCantidad
         '
         Me.txtCantidad.Location = New System.Drawing.Point(364, 54)
-        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCantidad.Name = "txtCantidad"
         Me.txtCantidad.Size = New System.Drawing.Size(49, 20)
         Me.txtCantidad.TabIndex = 7
@@ -160,7 +163,7 @@ Partial Class fVentaProducto
         'txtPrecioU
         '
         Me.txtPrecioU.Location = New System.Drawing.Point(276, 54)
-        Me.txtPrecioU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPrecioU.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPrecioU.Name = "txtPrecioU"
         Me.txtPrecioU.Size = New System.Drawing.Size(76, 20)
         Me.txtPrecioU.TabIndex = 5
@@ -168,7 +171,7 @@ Partial Class fVentaProducto
         'txtDescripcion
         '
         Me.txtDescripcion.Location = New System.Drawing.Point(134, 54)
-        Me.txtDescripcion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDescripcion.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDescripcion.Name = "txtDescripcion"
         Me.txtDescripcion.Size = New System.Drawing.Size(130, 20)
         Me.txtDescripcion.TabIndex = 3
@@ -176,17 +179,18 @@ Partial Class fVentaProducto
         'txtCodigo
         '
         Me.txtCodigo.Location = New System.Drawing.Point(36, 54)
-        Me.txtCodigo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCodigo.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCodigo.Name = "txtCodigo"
         Me.txtCodigo.Size = New System.Drawing.Size(76, 20)
         Me.txtCodigo.TabIndex = 1
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.dgvProductos)
         Me.GroupBox2.Location = New System.Drawing.Point(38, 154)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Size = New System.Drawing.Size(544, 191)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
@@ -202,9 +206,9 @@ Partial Class fVentaProducto
         Me.GroupBox3.Controls.Add(Me.txtIva)
         Me.GroupBox3.Controls.Add(Me.txtTotal)
         Me.GroupBox3.Location = New System.Drawing.Point(38, 358)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Size = New System.Drawing.Size(544, 122)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
@@ -243,7 +247,7 @@ Partial Class fVentaProducto
         'btnVerTotales
         '
         Me.btnVerTotales.Location = New System.Drawing.Point(36, 59)
-        Me.btnVerTotales.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnVerTotales.Margin = New System.Windows.Forms.Padding(2)
         Me.btnVerTotales.Name = "btnVerTotales"
         Me.btnVerTotales.Size = New System.Drawing.Size(76, 29)
         Me.btnVerTotales.TabIndex = 15
@@ -253,7 +257,7 @@ Partial Class fVentaProducto
         'txtSubTotal
         '
         Me.txtSubTotal.Location = New System.Drawing.Point(150, 63)
-        Me.txtSubTotal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSubTotal.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSubTotal.Name = "txtSubTotal"
         Me.txtSubTotal.Size = New System.Drawing.Size(103, 20)
         Me.txtSubTotal.TabIndex = 11
@@ -261,7 +265,7 @@ Partial Class fVentaProducto
         'txtIva
         '
         Me.txtIva.Location = New System.Drawing.Point(276, 63)
-        Me.txtIva.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtIva.Margin = New System.Windows.Forms.Padding(2)
         Me.txtIva.Name = "txtIva"
         Me.txtIva.Size = New System.Drawing.Size(108, 20)
         Me.txtIva.TabIndex = 13
@@ -269,10 +273,18 @@ Partial Class fVentaProducto
         'txtTotal
         '
         Me.txtTotal.Location = New System.Drawing.Point(413, 63)
-        Me.txtTotal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtTotal.Margin = New System.Windows.Forms.Padding(2)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.Size = New System.Drawing.Size(76, 20)
         Me.txtTotal.TabIndex = 15
+        '
+        'dgvProductos
+        '
+        Me.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvProductos.Location = New System.Drawing.Point(36, 18)
+        Me.dgvProductos.Name = "dgvProductos"
+        Me.dgvProductos.Size = New System.Drawing.Size(467, 150)
+        Me.dgvProductos.TabIndex = 0
         '
         'fVentaProducto
         '
@@ -282,13 +294,15 @@ Partial Class fVentaProducto
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "fVentaProducto"
         Me.Text = "Venta de productos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        CType(Me.dgvProductos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -314,4 +328,5 @@ Partial Class fVentaProducto
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents dgvProductos As DataGridView
 End Class
