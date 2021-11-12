@@ -69,6 +69,10 @@ Public Class fInicio
         Return validar
     End Function
 
+    Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
+
+    End Sub
+
     Function ValidarIdentificacion(pardni As String) As Boolean
         validarDni = True
         For i = 0 To dgvContactos.RowCount - 1
