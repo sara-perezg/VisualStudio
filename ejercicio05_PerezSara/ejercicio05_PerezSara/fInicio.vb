@@ -2,7 +2,7 @@
 
 Public Class fInicio
     Dim nombre, dni, direccion, telefono, genero As String
-    Dim validar, validarDNi As Boolean
+    Dim validar, validarDni As Boolean
     Dim filaActual As Integer
     Dim separator As String = ";"
 
@@ -25,6 +25,15 @@ Public Class fInicio
         genero = cbGenero.Text
 
         validar = ValidarDatos(nombre, dni, telefono, direccion, genero)
+
+        If validar = True Then
+            validarDni = ValidarIdentificacion(dni)
+            If validarDni = True Then
+                dgvContactos.Rows.Add(nombre, dni, telefono, direccion, genero)
+                MsgBox("El contacto se ha resgistrado")
+                limpiar()
+            End If
+        End If
 
     End Sub
 
@@ -58,5 +67,29 @@ Public Class fInicio
 
         Return validar
     End Function
+
+    Function ValidarIdentificacion(pardni As String) As Boolean
+        validarDni = True
+        For i = 0 To dgvContactos.RowCount - 1
+            If pardni = dgvContactos.Rows(i).Cells("Column2").Value Then
+                MsgBox("Ya existe un contacto con ese dni", MsgBoxStyle.Critical, "Informacion")
+                ErrorProviderValidar.SetError(txtDNI, "Ingrese otro DNI")
+                validar = False
+                Exit For
+            Else
+                ErrorProviderValidar.SetError(txtDNI, "")
+            End If
+        Next
+        Return validarDni
+
+    End Function
+
+    Private Sub limpiar()
+        txtNombre.Clear()
+        txtDNI.Clear()
+        txtDireccion.Clear()
+        txtTelefono.Clear()
+        cbGenero.Text = ""
+    End Sub
 
 End Class
