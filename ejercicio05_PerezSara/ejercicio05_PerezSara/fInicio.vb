@@ -5,9 +5,10 @@ Public Class fInicio
     Dim validar, validarDni As Boolean
     Dim filaActual As Integer
     Dim separator As String = ";"
+    Dim file As String = ".\datos.txt"
 
     Private Sub fInicio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim archivoLeer As StreamReader = New StreamReader(".\datos.txt")
+        Dim archivoLeer As StreamReader = New StreamReader(file)
 
         While Not archivoLeer.EndOfStream
             Dim cadena As String = archivoLeer.ReadLine
@@ -90,6 +91,39 @@ Public Class fInicio
         txtDireccion.Clear()
         txtTelefono.Clear()
         cbGenero.Text = ""
+    End Sub
+
+    Private Sub ActivarBotones()
+        btnAgregar.Enabled = True
+        btnGuardar.Enabled = True
+        btnModificar.Enabled = False
+        btnEliminar.Enabled = False
+    End Sub
+    Private Sub DesactivarBotones()
+        btnAgregar.Enabled = False
+        btnGuardar.Enabled = False
+        btnModificar.Enabled = True
+        btnEliminar.Enabled = True
+    End Sub
+
+    Private Sub GuardarDatos()
+        Dim archivoEscritura As StreamWriter
+        Dim linea As String
+        archivoEscritura = New StreamWriter(file)
+        With dgvContactos
+            For i = 0 To .RowCount - 1
+                ' contatenacion de un string
+                linea = .Rows(i).Cells("Column1").Value & separator &
+                .Rows(i).Cells("Column2").Value & separator &
+                .Rows(i).Cells("Column3").Value & separator &
+                .Rows(i).Cells("Column4").Value & separator &
+                .Rows(i).Cells("Column5").Value & separator
+
+                archivoEscritura.WriteLine(linea)
+            Next
+            MsgBox("Los datos se han guardao correctamente")
+        End With
+        archivoEscritura.Close()
     End Sub
 
 End Class

@@ -32,7 +32,7 @@ Partial Class fInicio
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
-        Me.btnElminar = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.txtNombre = New System.Windows.Forms.TextBox()
@@ -143,15 +143,15 @@ Partial Class fInicio
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.UseVisualStyleBackColor = True
         '
-        'btnElminar
+        'btnEliminar
         '
-        Me.btnElminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnElminar.Location = New System.Drawing.Point(542, 148)
-        Me.btnElminar.Name = "btnElminar"
-        Me.btnElminar.Size = New System.Drawing.Size(109, 27)
-        Me.btnElminar.TabIndex = 9
-        Me.btnElminar.Text = "Eliminar"
-        Me.btnElminar.UseVisualStyleBackColor = True
+        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.Location = New System.Drawing.Point(542, 148)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(109, 27)
+        Me.btnEliminar.TabIndex = 9
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'btnGuardar
         '
@@ -204,6 +204,7 @@ Partial Class fInicio
         'cbGenero
         '
         Me.cbGenero.FormattingEnabled = True
+        Me.cbGenero.Items.AddRange(New Object() {"Mujer", "Hombre", "No-Binario", "No Especificado"})
         Me.cbGenero.Location = New System.Drawing.Point(185, 217)
         Me.cbGenero.Name = "cbGenero"
         Me.cbGenero.Size = New System.Drawing.Size(229, 24)
@@ -272,7 +273,7 @@ Partial Class fInicio
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnGuardar)
-        Me.Controls.Add(Me.btnElminar)
+        Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.Label7)
@@ -300,7 +301,7 @@ Partial Class fInicio
     Friend WithEvents Label7 As Label
     Friend WithEvents btnAgregar As Button
     Friend WithEvents btnModificar As Button
-    Friend WithEvents btnElminar As Button
+    Friend WithEvents btnEliminar As Button
     Friend WithEvents btnGuardar As Button
     Friend WithEvents btnSalir As Button
     Friend WithEvents colNombre As DataGridViewTextBoxColumn
