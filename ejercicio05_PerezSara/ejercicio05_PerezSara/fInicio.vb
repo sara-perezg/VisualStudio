@@ -24,7 +24,39 @@ Public Class fInicio
         direccion = txtDireccion.Text
         genero = cbGenero.Text
 
+        validar = ValidarDatos(nombre, dni, telefono, direccion, genero)
 
     End Sub
+
+    Function ValidarDatos(parnombre As String, pardni As String, partelefono As String, pardireccion As String, pargenero As String) As Boolean
+        Dim titleMsgBox As String = "Informacion"
+
+        validar = False
+        If parnombre = "" Then
+            MsgBox("Ingrese el nombre", MsgBoxStyle.Critical, titleMsgBox)
+            ErrorProviderValidar.SetError(txtNombre, "Ingrese nombre")
+        ElseIf pardni = "" Then
+            MsgBox("Ingrese el DNI", MsgBoxStyle.Critical, titleMsgBox)
+            ErrorProviderValidar.SetError(txtDNI, "Ingrese DNI")
+        ElseIf partelefono = "" Then
+            MsgBox("Ingresse el Telefono", MsgBoxStyle.Critical, titleMsgBox)
+            ErrorProviderValidar.SetError(txtTelefono, "Ingrese telefono")
+        ElseIf pardireccion = "" Then
+            MsgBox("Ingresse el Direccion", MsgBoxStyle.Critical, titleMsgBox)
+            ErrorProviderValidar.SetError(txtDireccion, "Ingrese telefono")
+        ElseIf pargenero = "" Then
+            MsgBox("Ingresse el Genero", MsgBoxStyle.Critical, titleMsgBox)
+            ErrorProviderValidar.SetError(cbGenero, "Ingrese telefono")
+        Else
+            validar = True
+            ErrorProviderValidar.SetError(txtNombre, "")
+            ErrorProviderValidar.SetError(txtDireccion, "")
+            ErrorProviderValidar.SetError(txtDNI, "")
+            ErrorProviderValidar.SetError(txtTelefono, "")
+            ErrorProviderValidar.SetError(cbGenero, "")
+        End If
+
+        Return validar
+    End Function
 
 End Class

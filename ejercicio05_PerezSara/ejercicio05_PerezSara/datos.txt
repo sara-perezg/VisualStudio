@@ -1,0 +1,4 @@
+﻿Nombre1;dni1;tel1;dir1;genero1
+Nombre2;dni2;tel2;dir2;genero2
+Nombre3;dni3;tel3;dir3;genero3
+Nombre4;dni4;tel4;dir4;genero4

@@ -22,6 +22,7 @@ Partial Class fInicio
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -45,7 +46,9 @@ Partial Class fInicio
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ErrorProviderValidar = New System.Windows.Forms.ErrorProvider(Me.components)
         CType(Me.dgvContactos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProviderValidar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -252,6 +255,10 @@ Partial Class fInicio
         Me.Column5.Name = "Column5"
         Me.Column5.Width = 125
         '
+        'ErrorProviderValidar
+        '
+        Me.ErrorProviderValidar.ContainerControl = Me
+        '
         'fInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -278,6 +285,7 @@ Partial Class fInicio
         Me.Name = "fInicio"
         Me.Text = "Inicio"
         CType(Me.dgvContactos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProviderValidar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -311,4 +319,5 @@ Partial Class fInicio
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents ErrorProviderValidar As ErrorProvider
 End Class
