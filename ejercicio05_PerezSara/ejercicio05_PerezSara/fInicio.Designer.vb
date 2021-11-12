@@ -39,6 +39,13 @@ Partial Class fInicio
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.cbGenero = New System.Windows.Forms.ComboBox()
+        Me.dgvContactos = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.dgvContactos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -56,7 +63,7 @@ Partial Class fInicio
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(58, 75)
+        Me.Label2.Location = New System.Drawing.Point(79, 77)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(67, 17)
         Me.Label2.TabIndex = 1
@@ -66,7 +73,7 @@ Partial Class fInicio
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(58, 111)
+        Me.Label3.Location = New System.Drawing.Point(79, 113)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(33, 17)
         Me.Label3.TabIndex = 2
@@ -76,7 +83,7 @@ Partial Class fInicio
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(58, 147)
+        Me.Label4.Location = New System.Drawing.Point(79, 149)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(80, 17)
         Me.Label4.TabIndex = 3
@@ -86,7 +93,7 @@ Partial Class fInicio
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(58, 183)
+        Me.Label5.Location = New System.Drawing.Point(79, 185)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(88, 17)
         Me.Label5.TabIndex = 4
@@ -96,7 +103,7 @@ Partial Class fInicio
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(58, 219)
+        Me.Label6.Location = New System.Drawing.Point(79, 221)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(64, 17)
         Me.Label6.TabIndex = 5
@@ -116,7 +123,7 @@ Partial Class fInicio
         'btnAgregar
         '
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.Location = New System.Drawing.Point(525, 50)
+        Me.btnAgregar.Location = New System.Drawing.Point(542, 50)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(109, 27)
         Me.btnAgregar.TabIndex = 7
@@ -126,7 +133,7 @@ Partial Class fInicio
         'btnModificar
         '
         Me.btnModificar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModificar.Location = New System.Drawing.Point(525, 99)
+        Me.btnModificar.Location = New System.Drawing.Point(542, 99)
         Me.btnModificar.Name = "btnModificar"
         Me.btnModificar.Size = New System.Drawing.Size(109, 27)
         Me.btnModificar.TabIndex = 8
@@ -136,7 +143,7 @@ Partial Class fInicio
         'btnElminar
         '
         Me.btnElminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnElminar.Location = New System.Drawing.Point(525, 148)
+        Me.btnElminar.Location = New System.Drawing.Point(542, 148)
         Me.btnElminar.Name = "btnElminar"
         Me.btnElminar.Size = New System.Drawing.Size(109, 27)
         Me.btnElminar.TabIndex = 9
@@ -146,7 +153,7 @@ Partial Class fInicio
         'btnGuardar
         '
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGuardar.Location = New System.Drawing.Point(525, 197)
+        Me.btnGuardar.Location = New System.Drawing.Point(542, 197)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(109, 27)
         Me.btnGuardar.TabIndex = 10
@@ -156,7 +163,7 @@ Partial Class fInicio
         'btnSalir
         '
         Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Location = New System.Drawing.Point(525, 246)
+        Me.btnSalir.Location = New System.Drawing.Point(542, 246)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(109, 27)
         Me.btnSalir.TabIndex = 12
@@ -165,28 +172,28 @@ Partial Class fInicio
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(167, 75)
+        Me.txtNombre.Location = New System.Drawing.Point(188, 77)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(226, 22)
         Me.txtNombre.TabIndex = 13
         '
         'txtDNI
         '
-        Me.txtDNI.Location = New System.Drawing.Point(167, 111)
+        Me.txtDNI.Location = New System.Drawing.Point(188, 113)
         Me.txtDNI.Name = "txtDNI"
         Me.txtDNI.Size = New System.Drawing.Size(226, 22)
         Me.txtDNI.TabIndex = 14
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(167, 147)
+        Me.txtTelefono.Location = New System.Drawing.Point(188, 149)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(226, 22)
         Me.txtTelefono.TabIndex = 15
         '
         'txtDireccion
         '
-        Me.txtDireccion.Location = New System.Drawing.Point(167, 183)
+        Me.txtDireccion.Location = New System.Drawing.Point(188, 185)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(226, 22)
         Me.txtDireccion.TabIndex = 16
@@ -194,16 +201,63 @@ Partial Class fInicio
         'cbGenero
         '
         Me.cbGenero.FormattingEnabled = True
-        Me.cbGenero.Location = New System.Drawing.Point(164, 215)
+        Me.cbGenero.Location = New System.Drawing.Point(185, 217)
         Me.cbGenero.Name = "cbGenero"
         Me.cbGenero.Size = New System.Drawing.Size(229, 24)
         Me.cbGenero.TabIndex = 17
+        '
+        'dgvContactos
+        '
+        Me.dgvContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvContactos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
+        Me.dgvContactos.Location = New System.Drawing.Point(40, 317)
+        Me.dgvContactos.Name = "dgvContactos"
+        Me.dgvContactos.RowHeadersWidth = 51
+        Me.dgvContactos.RowTemplate.Height = 24
+        Me.dgvContactos.Size = New System.Drawing.Size(647, 197)
+        Me.dgvContactos.TabIndex = 18
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Nombre"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 125
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "DNI"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 125
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Telefono"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 125
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Direccion"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Genero"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 125
         '
         'fInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(725, 549)
+        Me.Controls.Add(Me.dgvContactos)
         Me.Controls.Add(Me.cbGenero)
         Me.Controls.Add(Me.txtDireccion)
         Me.Controls.Add(Me.txtTelefono)
@@ -223,6 +277,7 @@ Partial Class fInicio
         Me.Controls.Add(Me.Label1)
         Me.Name = "fInicio"
         Me.Text = "Inicio"
+        CType(Me.dgvContactos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -250,4 +305,10 @@ Partial Class fInicio
     Friend WithEvents txtTelefono As TextBox
     Friend WithEvents txtDireccion As TextBox
     Friend WithEvents cbGenero As ComboBox
+    Friend WithEvents dgvContactos As DataGridView
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
 End Class
