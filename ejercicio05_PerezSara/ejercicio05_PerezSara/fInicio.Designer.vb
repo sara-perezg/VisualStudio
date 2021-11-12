@@ -35,11 +35,11 @@ Partial Class fInicio
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.dgvContactos = New System.Windows.Forms.DataGridView()
         Me.btnSalir = New System.Windows.Forms.Button()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DNI = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Genero = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colNombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colTelefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDni = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colDireccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colGenero = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtDNI = New System.Windows.Forms.TextBox()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
@@ -163,7 +163,7 @@ Partial Class fInicio
         'dgvContactos
         '
         Me.dgvContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContactos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre, Me.Telefono, Me.DNI, Me.Direccion, Me.Genero})
+        Me.dgvContactos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colNombre, Me.colTelefono, Me.colDni, Me.colDireccion, Me.colGenero})
         Me.dgvContactos.Location = New System.Drawing.Point(40, 313)
         Me.dgvContactos.Name = "dgvContactos"
         Me.dgvContactos.RowHeadersWidth = 51
@@ -183,38 +183,38 @@ Partial Class fInicio
         '
         'Nombre
         '
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.MinimumWidth = 6
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.Width = 125
+        Me.colNombre.HeaderText = "Nombre"
+        Me.colNombre.MinimumWidth = 6
+        Me.colNombre.Name = "Nombre"
+        Me.colNombre.Width = 125
         '
         'Telefono
         '
-        Me.Telefono.HeaderText = "Telefono"
-        Me.Telefono.MinimumWidth = 6
-        Me.Telefono.Name = "Telefono"
-        Me.Telefono.Width = 125
+        Me.colTelefono.HeaderText = "Telefono"
+        Me.colTelefono.MinimumWidth = 6
+        Me.colTelefono.Name = "Telefono"
+        Me.colTelefono.Width = 125
         '
         'DNI
         '
-        Me.DNI.HeaderText = "DNI"
-        Me.DNI.MinimumWidth = 6
-        Me.DNI.Name = "DNI"
-        Me.DNI.Width = 125
+        Me.colDni.HeaderText = "DNI"
+        Me.colDni.MinimumWidth = 6
+        Me.colDni.Name = "DNI"
+        Me.colDni.Width = 125
         '
         'Direccion
         '
-        Me.Direccion.HeaderText = "Direccion"
-        Me.Direccion.MinimumWidth = 6
-        Me.Direccion.Name = "Direccion"
-        Me.Direccion.Width = 125
+        Me.colDireccion.HeaderText = "Direccion"
+        Me.colDireccion.MinimumWidth = 6
+        Me.colDireccion.Name = "Direccion"
+        Me.colDireccion.Width = 125
         '
         'Genero
         '
-        Me.Genero.HeaderText = "Genero"
-        Me.Genero.MinimumWidth = 6
-        Me.Genero.Name = "Genero"
-        Me.Genero.Width = 125
+        Me.colGenero.HeaderText = "Genero"
+        Me.colGenero.MinimumWidth = 6
+        Me.colGenero.Name = "Genero"
+        Me.colGenero.Width = 125
         '
         'txtNombre
         '
@@ -296,11 +296,11 @@ Partial Class fInicio
     Friend WithEvents btnGuardar As Button
     Friend WithEvents dgvContactos As DataGridView
     Friend WithEvents btnSalir As Button
-    Friend WithEvents Nombre As DataGridViewTextBoxColumn
-    Friend WithEvents Telefono As DataGridViewTextBoxColumn
-    Friend WithEvents DNI As DataGridViewTextBoxColumn
-    Friend WithEvents Direccion As DataGridViewTextBoxColumn
-    Friend WithEvents Genero As DataGridViewTextBoxColumn
+    Friend WithEvents colNombre As DataGridViewTextBoxColumn
+    Friend WithEvents colTelefono As DataGridViewTextBoxColumn
+    Friend WithEvents colDni As DataGridViewTextBoxColumn
+    Friend WithEvents colDireccion As DataGridViewTextBoxColumn
+    Friend WithEvents colGenero As DataGridViewTextBoxColumn
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents txtDNI As TextBox
     Friend WithEvents txtTelefono As TextBox
