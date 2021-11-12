@@ -33,19 +33,12 @@ Partial Class fInicio
         Me.btnModificar = New System.Windows.Forms.Button()
         Me.btnElminar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.dgvContactos = New System.Windows.Forms.DataGridView()
         Me.btnSalir = New System.Windows.Forms.Button()
-        Me.colNombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colTelefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDni = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colDireccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colGenero = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtDNI = New System.Windows.Forms.TextBox()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.cbGenero = New System.Windows.Forms.ComboBox()
-        CType(Me.dgvContactos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -160,17 +153,6 @@ Partial Class fInicio
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
-        'dgvContactos
-        '
-        Me.dgvContactos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvContactos.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colNombre, Me.colTelefono, Me.colDni, Me.colDireccion, Me.colGenero})
-        Me.dgvContactos.Location = New System.Drawing.Point(40, 313)
-        Me.dgvContactos.Name = "dgvContactos"
-        Me.dgvContactos.RowHeadersWidth = 51
-        Me.dgvContactos.RowTemplate.Height = 24
-        Me.dgvContactos.Size = New System.Drawing.Size(626, 197)
-        Me.dgvContactos.TabIndex = 11
-        '
         'btnSalir
         '
         Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -180,41 +162,6 @@ Partial Class fInicio
         Me.btnSalir.TabIndex = 12
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = True
-        '
-        'Nombre
-        '
-        Me.colNombre.HeaderText = "Nombre"
-        Me.colNombre.MinimumWidth = 6
-        Me.colNombre.Name = "Nombre"
-        Me.colNombre.Width = 125
-        '
-        'Telefono
-        '
-        Me.colTelefono.HeaderText = "Telefono"
-        Me.colTelefono.MinimumWidth = 6
-        Me.colTelefono.Name = "Telefono"
-        Me.colTelefono.Width = 125
-        '
-        'DNI
-        '
-        Me.colDni.HeaderText = "DNI"
-        Me.colDni.MinimumWidth = 6
-        Me.colDni.Name = "DNI"
-        Me.colDni.Width = 125
-        '
-        'Direccion
-        '
-        Me.colDireccion.HeaderText = "Direccion"
-        Me.colDireccion.MinimumWidth = 6
-        Me.colDireccion.Name = "Direccion"
-        Me.colDireccion.Width = 125
-        '
-        'Genero
-        '
-        Me.colGenero.HeaderText = "Genero"
-        Me.colGenero.MinimumWidth = 6
-        Me.colGenero.Name = "Genero"
-        Me.colGenero.Width = 125
         '
         'txtNombre
         '
@@ -263,7 +210,6 @@ Partial Class fInicio
         Me.Controls.Add(Me.txtDNI)
         Me.Controls.Add(Me.txtNombre)
         Me.Controls.Add(Me.btnSalir)
-        Me.Controls.Add(Me.dgvContactos)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnElminar)
         Me.Controls.Add(Me.btnModificar)
@@ -277,7 +223,6 @@ Partial Class fInicio
         Me.Controls.Add(Me.Label1)
         Me.Name = "fInicio"
         Me.Text = "Inicio"
-        CType(Me.dgvContactos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -294,7 +239,6 @@ Partial Class fInicio
     Friend WithEvents btnModificar As Button
     Friend WithEvents btnElminar As Button
     Friend WithEvents btnGuardar As Button
-    Friend WithEvents dgvContactos As DataGridView
     Friend WithEvents btnSalir As Button
     Friend WithEvents colNombre As DataGridViewTextBoxColumn
     Friend WithEvents colTelefono As DataGridViewTextBoxColumn
