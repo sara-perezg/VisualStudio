@@ -70,7 +70,38 @@ Public Class fInicio
     End Function
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
+        nombre = txtNombre.Text
+        dni = txtDNI.Text
+        telefono = txtTelefono.Text
+        direccion = txtDireccion.Text
+        genero = cbGenero.Text
+        validar = ValidarDatos(nombre, dni, telefono, direccion, genero)
+        filaActual = dgvContactos.CurrentRow.Index
+        If validar = True Then
+            If dni <> dgvContactos.Rows(filaActual).Cells("Column2").Value Then
+                validarDni = ValidarIdentificacion(dni)
+            End If
 
+            If validarDni = True Then
+                dgvContactos.Rows(filaActual).Cells("Column1").Value = nombre
+                dgvContactos.Rows(filaActual).Cells("Column2").Value = dni
+                dgvContactos.Rows(filaActual).Cells("Column3").Value = telefono
+                dgvContactos.Rows(filaActual).Cells("Column4").Value = direccion
+                dgvContactos.Rows(filaActual).Cells("Column5").Value = genero
+                MsgBox("El contacto se ha modificado")
+                ActivarBotones()
+                limpiar()
+            End If
+        End If
+
+    End Sub
+
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+        GuardarDatos()
+    End Sub
+
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        End
     End Sub
 
     Function ValidarIdentificacion(pardni As String) As Boolean
