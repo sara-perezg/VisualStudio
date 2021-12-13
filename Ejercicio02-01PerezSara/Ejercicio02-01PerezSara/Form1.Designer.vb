@@ -22,162 +22,164 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
+        Me.gbClase = New System.Windows.Forms.GroupBox()
+        Me.rbProfesional = New System.Windows.Forms.RadioButton()
+        Me.rbTecnico = New System.Windows.Forms.RadioButton()
+        Me.rbAdministrativo = New System.Windows.Forms.RadioButton()
+        Me.rbObrero = New System.Windows.Forms.RadioButton()
+        Me.gbYears = New System.Windows.Forms.GroupBox()
+        Me.rb10years = New System.Windows.Forms.RadioButton()
+        Me.rb5to10years = New System.Windows.Forms.RadioButton()
+        Me.rb5years = New System.Windows.Forms.RadioButton()
+        Me.gbSindicato = New System.Windows.Forms.GroupBox()
+        Me.rbSindicatoNo = New System.Windows.Forms.RadioButton()
+        Me.rbSindicatoYes = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DomainUpDown1 = New System.Windows.Forms.DomainUpDown()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
+        Me.dudHijos = New System.Windows.Forms.DomainUpDown()
+        Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
+        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.gbClase.SuspendLayout()
+        Me.gbYears.SuspendLayout()
+        Me.gbSindicato.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'gbClase
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton4)
-        Me.GroupBox1.Controls.Add(Me.RadioButton3)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Location = New System.Drawing.Point(44, 63)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(211, 277)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Clase Trabajador"
+        Me.gbClase.Controls.Add(Me.rbProfesional)
+        Me.gbClase.Controls.Add(Me.rbTecnico)
+        Me.gbClase.Controls.Add(Me.rbAdministrativo)
+        Me.gbClase.Controls.Add(Me.rbObrero)
+        Me.gbClase.Location = New System.Drawing.Point(44, 63)
+        Me.gbClase.Name = "gbClase"
+        Me.gbClase.Size = New System.Drawing.Size(211, 277)
+        Me.gbClase.TabIndex = 0
+        Me.gbClase.TabStop = False
+        Me.gbClase.Text = "Clase Trabajador"
         '
-        'RadioButton4
+        'rbProfesional
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(32, 193)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(100, 21)
-        Me.RadioButton4.TabIndex = 3
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Profesional"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.rbProfesional.AutoSize = True
+        Me.rbProfesional.Location = New System.Drawing.Point(32, 193)
+        Me.rbProfesional.Name = "rbProfesional"
+        Me.rbProfesional.Size = New System.Drawing.Size(100, 21)
+        Me.rbProfesional.TabIndex = 3
+        Me.rbProfesional.TabStop = True
+        Me.rbProfesional.Text = "Profesional"
+        Me.rbProfesional.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'rbTecnico
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(32, 147)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(79, 21)
-        Me.RadioButton3.TabIndex = 2
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Tecnico"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.rbTecnico.AutoSize = True
+        Me.rbTecnico.Location = New System.Drawing.Point(32, 147)
+        Me.rbTecnico.Name = "rbTecnico"
+        Me.rbTecnico.Size = New System.Drawing.Size(79, 21)
+        Me.rbTecnico.TabIndex = 2
+        Me.rbTecnico.TabStop = True
+        Me.rbTecnico.Text = "Tecnico"
+        Me.rbTecnico.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rbAdministrativo
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(32, 101)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(117, 21)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Administrativo"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rbAdministrativo.AutoSize = True
+        Me.rbAdministrativo.Location = New System.Drawing.Point(32, 101)
+        Me.rbAdministrativo.Name = "rbAdministrativo"
+        Me.rbAdministrativo.Size = New System.Drawing.Size(117, 21)
+        Me.rbAdministrativo.TabIndex = 1
+        Me.rbAdministrativo.TabStop = True
+        Me.rbAdministrativo.Text = "Administrativo"
+        Me.rbAdministrativo.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'rbObrero
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(32, 55)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(74, 21)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Obrero"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rbObrero.AutoSize = True
+        Me.rbObrero.Checked = True
+        Me.rbObrero.Location = New System.Drawing.Point(32, 55)
+        Me.rbObrero.Name = "rbObrero"
+        Me.rbObrero.Size = New System.Drawing.Size(74, 21)
+        Me.rbObrero.TabIndex = 0
+        Me.rbObrero.TabStop = True
+        Me.rbObrero.Text = "Obrero"
+        Me.rbObrero.UseVisualStyleBackColor = True
         '
-        'GroupBox2
+        'gbYears
         '
-        Me.GroupBox2.Controls.Add(Me.RadioButton9)
-        Me.GroupBox2.Controls.Add(Me.RadioButton8)
-        Me.GroupBox2.Controls.Add(Me.RadioButton7)
-        Me.GroupBox2.Location = New System.Drawing.Point(571, 63)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(193, 277)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Años de Servicio"
+        Me.gbYears.Controls.Add(Me.rb10years)
+        Me.gbYears.Controls.Add(Me.rb5to10years)
+        Me.gbYears.Controls.Add(Me.rb5years)
+        Me.gbYears.Location = New System.Drawing.Point(571, 63)
+        Me.gbYears.Name = "gbYears"
+        Me.gbYears.Size = New System.Drawing.Size(193, 277)
+        Me.gbYears.TabIndex = 1
+        Me.gbYears.TabStop = False
+        Me.gbYears.Text = "Años de Servicio"
         '
-        'RadioButton9
+        'rb10years
         '
-        Me.RadioButton9.AutoSize = True
-        Me.RadioButton9.Location = New System.Drawing.Point(37, 193)
-        Me.RadioButton9.Name = "RadioButton9"
-        Me.RadioButton9.Size = New System.Drawing.Size(130, 21)
-        Me.RadioButton9.TabIndex = 7
-        Me.RadioButton9.TabStop = True
-        Me.RadioButton9.Text = "Más de 10 años"
-        Me.RadioButton9.UseVisualStyleBackColor = True
+        Me.rb10years.AutoSize = True
+        Me.rb10years.Location = New System.Drawing.Point(37, 193)
+        Me.rb10years.Name = "rb10years"
+        Me.rb10years.Size = New System.Drawing.Size(130, 21)
+        Me.rb10years.TabIndex = 7
+        Me.rb10years.TabStop = True
+        Me.rb10years.Text = "Más de 10 años"
+        Me.rb10years.UseVisualStyleBackColor = True
         '
-        'RadioButton8
+        'rb5to10years
         '
-        Me.RadioButton8.AutoSize = True
-        Me.RadioButton8.Location = New System.Drawing.Point(37, 124)
-        Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(141, 21)
-        Me.RadioButton8.TabIndex = 6
-        Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "Entre 5 y 10 años"
-        Me.RadioButton8.UseVisualStyleBackColor = True
+        Me.rb5to10years.AutoSize = True
+        Me.rb5to10years.Location = New System.Drawing.Point(37, 124)
+        Me.rb5to10years.Name = "rb5to10years"
+        Me.rb5to10years.Size = New System.Drawing.Size(141, 21)
+        Me.rb5to10years.TabIndex = 6
+        Me.rb5to10years.TabStop = True
+        Me.rb5to10years.Text = "Entre 5 y 10 años"
+        Me.rb5to10years.UseVisualStyleBackColor = True
         '
-        'RadioButton7
+        'rb5years
         '
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.Location = New System.Drawing.Point(37, 55)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(122, 21)
-        Me.RadioButton7.TabIndex = 5
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "Más de 5 años"
-        Me.RadioButton7.UseVisualStyleBackColor = True
+        Me.rb5years.AutoSize = True
+        Me.rb5years.Checked = True
+        Me.rb5years.Location = New System.Drawing.Point(37, 55)
+        Me.rb5years.Name = "rb5years"
+        Me.rb5years.Size = New System.Drawing.Size(122, 21)
+        Me.rb5years.TabIndex = 5
+        Me.rb5years.TabStop = True
+        Me.rb5years.Text = "Más de 5 años"
+        Me.rb5years.UseVisualStyleBackColor = True
         '
-        'GroupBox3
+        'gbSindicato
         '
-        Me.GroupBox3.Controls.Add(Me.RadioButton6)
-        Me.GroupBox3.Controls.Add(Me.RadioButton5)
-        Me.GroupBox3.Location = New System.Drawing.Point(293, 63)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(226, 277)
-        Me.GroupBox3.TabIndex = 1
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Inscrito en un Sindicato"
+        Me.gbSindicato.Controls.Add(Me.rbSindicatoNo)
+        Me.gbSindicato.Controls.Add(Me.rbSindicatoYes)
+        Me.gbSindicato.Location = New System.Drawing.Point(293, 63)
+        Me.gbSindicato.Name = "gbSindicato"
+        Me.gbSindicato.Size = New System.Drawing.Size(226, 277)
+        Me.gbSindicato.TabIndex = 1
+        Me.gbSindicato.TabStop = False
+        Me.gbSindicato.Text = "Inscrito en un Sindicato"
         '
-        'RadioButton6
+        'rbSindicatoNo
         '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(56, 147)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(47, 21)
-        Me.RadioButton6.TabIndex = 5
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "No"
-        Me.RadioButton6.UseVisualStyleBackColor = True
+        Me.rbSindicatoNo.AutoSize = True
+        Me.rbSindicatoNo.Checked = True
+        Me.rbSindicatoNo.Location = New System.Drawing.Point(56, 147)
+        Me.rbSindicatoNo.Name = "rbSindicatoNo"
+        Me.rbSindicatoNo.Size = New System.Drawing.Size(47, 21)
+        Me.rbSindicatoNo.TabIndex = 5
+        Me.rbSindicatoNo.TabStop = True
+        Me.rbSindicatoNo.Text = "No"
+        Me.rbSindicatoNo.UseVisualStyleBackColor = True
         '
-        'RadioButton5
+        'rbSindicatoYes
         '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(56, 80)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(41, 21)
-        Me.RadioButton5.TabIndex = 4
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "Si"
-        Me.RadioButton5.UseVisualStyleBackColor = True
+        Me.rbSindicatoYes.AutoSize = True
+        Me.rbSindicatoYes.Location = New System.Drawing.Point(56, 80)
+        Me.rbSindicatoYes.Name = "rbSindicatoYes"
+        Me.rbSindicatoYes.Size = New System.Drawing.Size(41, 21)
+        Me.rbSindicatoYes.TabIndex = 4
+        Me.rbSindicatoYes.Text = "Si"
+        Me.rbSindicatoYes.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -188,82 +190,82 @@ Partial Class Form1
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Numero de hijos"
         '
-        'DomainUpDown1
+        'dudHijos
         '
-        Me.DomainUpDown1.Location = New System.Drawing.Point(190, 372)
-        Me.DomainUpDown1.Name = "DomainUpDown1"
-        Me.DomainUpDown1.Size = New System.Drawing.Size(120, 22)
-        Me.DomainUpDown1.TabIndex = 3
-        Me.DomainUpDown1.Text = "DomainUpDown1"
+        Me.dudHijos.Location = New System.Drawing.Point(190, 372)
+        Me.dudHijos.Name = "dudHijos"
+        Me.dudHijos.Size = New System.Drawing.Size(120, 22)
+        Me.dudHijos.TabIndex = 3
+        Me.dudHijos.Text = "0"
         '
-        'Button1
+        'btnCalcular
         '
-        Me.Button1.Location = New System.Drawing.Point(412, 392)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(82, 34)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Calcular"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCalcular.Location = New System.Drawing.Point(412, 392)
+        Me.btnCalcular.Name = "btnCalcular"
+        Me.btnCalcular.Size = New System.Drawing.Size(82, 34)
+        Me.btnCalcular.TabIndex = 4
+        Me.btnCalcular.Text = "Calcular"
+        Me.btnCalcular.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnLimpiar
         '
-        Me.Button2.Location = New System.Drawing.Point(545, 392)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(82, 34)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Limpiar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnLimpiar.Location = New System.Drawing.Point(545, 392)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(82, 34)
+        Me.btnLimpiar.TabIndex = 5
+        Me.btnLimpiar.Text = "Limpiar"
+        Me.btnLimpiar.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnSalir
         '
-        Me.Button3.Location = New System.Drawing.Point(678, 392)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(82, 34)
-        Me.Button3.TabIndex = 6
-        Me.Button3.Text = "Salir"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnSalir.Location = New System.Drawing.Point(678, 392)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(82, 34)
+        Me.btnSalir.TabIndex = 6
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.DomainUpDown1)
+        Me.Controls.Add(Me.btnSalir)
+        Me.Controls.Add(Me.btnLimpiar)
+        Me.Controls.Add(Me.btnCalcular)
+        Me.Controls.Add(Me.dudHijos)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.gbYears)
+        Me.Controls.Add(Me.gbSindicato)
+        Me.Controls.Add(Me.gbClase)
         Me.Name = "Form1"
         Me.Text = "Salario"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
+        Me.gbClase.ResumeLayout(False)
+        Me.gbClase.PerformLayout()
+        Me.gbYears.ResumeLayout(False)
+        Me.gbYears.PerformLayout()
+        Me.gbSindicato.ResumeLayout(False)
+        Me.gbSindicato.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents RadioButton9 As RadioButton
-    Friend WithEvents RadioButton8 As RadioButton
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents RadioButton5 As RadioButton
+    Friend WithEvents gbClase As GroupBox
+    Friend WithEvents rbProfesional As RadioButton
+    Friend WithEvents rbTecnico As RadioButton
+    Friend WithEvents rbAdministrativo As RadioButton
+    Friend WithEvents rbObrero As RadioButton
+    Friend WithEvents gbYears As GroupBox
+    Friend WithEvents rb10years As RadioButton
+    Friend WithEvents rb5to10years As RadioButton
+    Friend WithEvents rb5years As RadioButton
+    Friend WithEvents gbSindicato As GroupBox
+    Friend WithEvents rbSindicatoNo As RadioButton
+    Friend WithEvents rbSindicatoYes As RadioButton
     Friend WithEvents Label1 As Label
-    Friend WithEvents DomainUpDown1 As DomainUpDown
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents dudHijos As DomainUpDown
+    Friend WithEvents btnCalcular As Button
+    Friend WithEvents btnLimpiar As Button
+    Friend WithEvents btnSalir As Button
 End Class
