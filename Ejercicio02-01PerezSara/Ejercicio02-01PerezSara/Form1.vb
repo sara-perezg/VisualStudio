@@ -7,7 +7,7 @@
         setYear()
         setHijos()
         trabajador.calcularSueldo()
-        MsgBox(trabajador.sueldo)
+        MsgBox("El sueldo del trabajador es " & trabajador.sueldo)
     End Sub
 
     Private Sub setSueldo()
