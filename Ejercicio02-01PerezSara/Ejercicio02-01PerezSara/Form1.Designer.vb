@@ -192,8 +192,22 @@ Partial Class Form1
         '
         'dudHijos
         '
+        Me.dudHijos.Items.Add("12")
+        Me.dudHijos.Items.Add("11")
+        Me.dudHijos.Items.Add("10")
+        Me.dudHijos.Items.Add("9")
+        Me.dudHijos.Items.Add("8")
+        Me.dudHijos.Items.Add("7")
+        Me.dudHijos.Items.Add("6")
+        Me.dudHijos.Items.Add("5")
+        Me.dudHijos.Items.Add("4")
+        Me.dudHijos.Items.Add("3")
+        Me.dudHijos.Items.Add("2")
+        Me.dudHijos.Items.Add("1")
+        Me.dudHijos.Items.Add("0")
         Me.dudHijos.Location = New System.Drawing.Point(190, 372)
         Me.dudHijos.Name = "dudHijos"
+        Me.dudHijos.ReadOnly = True
         Me.dudHijos.Size = New System.Drawing.Size(120, 22)
         Me.dudHijos.TabIndex = 3
         Me.dudHijos.Text = "0"
