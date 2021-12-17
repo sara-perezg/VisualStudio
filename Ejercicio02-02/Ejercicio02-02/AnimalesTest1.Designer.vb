@@ -22,10 +22,10 @@ Partial Class AnimalesTest1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.gb1 = New System.Windows.Forms.GroupBox()
+        Me.gb2 = New System.Windows.Forms.GroupBox()
+        Me.gb3 = New System.Windows.Forms.GroupBox()
+        Me.btnCorregir = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.TestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CiudadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -36,44 +36,65 @@ Partial Class AnimalesTest1
         Me.HongosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Test1ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
+        Me.gb1.SuspendLayout()
+        Me.gb2.SuspendLayout()
+        Me.gb3.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'gb1
         '
-        Me.GroupBox1.Location = New System.Drawing.Point(72, 33)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(421, 100)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.gb1.Controls.Add(Me.RadioButton3)
+        Me.gb1.Controls.Add(Me.RadioButton2)
+        Me.gb1.Controls.Add(Me.RadioButton1)
+        Me.gb1.Location = New System.Drawing.Point(72, 46)
+        Me.gb1.Name = "gb1"
+        Me.gb1.Size = New System.Drawing.Size(489, 122)
+        Me.gb1.TabIndex = 0
+        Me.gb1.TabStop = False
+        Me.gb1.Text = "Pregunta 1"
         '
-        'GroupBox2
+        'gb2
         '
-        Me.GroupBox2.Location = New System.Drawing.Point(72, 168)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(421, 100)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
+        Me.gb2.Controls.Add(Me.RadioButton4)
+        Me.gb2.Controls.Add(Me.RadioButton6)
+        Me.gb2.Controls.Add(Me.RadioButton5)
+        Me.gb2.Location = New System.Drawing.Point(72, 191)
+        Me.gb2.Name = "gb2"
+        Me.gb2.Size = New System.Drawing.Size(489, 122)
+        Me.gb2.TabIndex = 1
+        Me.gb2.TabStop = False
+        Me.gb2.Text = "Pregunta 2"
         '
-        'GroupBox3
+        'gb3
         '
-        Me.GroupBox3.Location = New System.Drawing.Point(72, 318)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(421, 100)
-        Me.GroupBox3.TabIndex = 1
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "GroupBox3"
+        Me.gb3.Controls.Add(Me.RadioButton7)
+        Me.gb3.Controls.Add(Me.RadioButton8)
+        Me.gb3.Controls.Add(Me.RadioButton9)
+        Me.gb3.Location = New System.Drawing.Point(72, 336)
+        Me.gb3.Name = "gb3"
+        Me.gb3.Size = New System.Drawing.Size(489, 122)
+        Me.gb3.TabIndex = 1
+        Me.gb3.TabStop = False
+        Me.gb3.Text = "Pregunta 3"
         '
-        'Button1
+        'btnCorregir
         '
-        Me.Button1.Location = New System.Drawing.Point(574, 437)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCorregir.Location = New System.Drawing.Point(585, 421)
+        Me.btnCorregir.Name = "btnCorregir"
+        Me.btnCorregir.Size = New System.Drawing.Size(97, 38)
+        Me.btnCorregir.TabIndex = 2
+        Me.btnCorregir.Text = "Corregir"
+        Me.btnCorregir.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
@@ -142,6 +163,105 @@ Partial Class AnimalesTest1
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(31, 37)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "RadioButton1"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(31, 62)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "RadioButton2"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(31, 87)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton3.TabIndex = 2
+        Me.RadioButton3.TabStop = True
+        Me.RadioButton3.Text = "RadioButton3"
+        Me.RadioButton3.UseVisualStyleBackColor = True
+        '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Location = New System.Drawing.Point(31, 86)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton4.TabIndex = 5
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "RadioButton4"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Location = New System.Drawing.Point(31, 61)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton5.TabIndex = 4
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "RadioButton5"
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        '
+        'RadioButton6
+        '
+        Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.Location = New System.Drawing.Point(31, 36)
+        Me.RadioButton6.Name = "RadioButton6"
+        Me.RadioButton6.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton6.TabIndex = 3
+        Me.RadioButton6.TabStop = True
+        Me.RadioButton6.Text = "RadioButton6"
+        Me.RadioButton6.UseVisualStyleBackColor = True
+        '
+        'RadioButton7
+        '
+        Me.RadioButton7.AutoSize = True
+        Me.RadioButton7.Location = New System.Drawing.Point(31, 84)
+        Me.RadioButton7.Name = "RadioButton7"
+        Me.RadioButton7.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton7.TabIndex = 8
+        Me.RadioButton7.TabStop = True
+        Me.RadioButton7.Text = "RadioButton7"
+        Me.RadioButton7.UseVisualStyleBackColor = True
+        '
+        'RadioButton8
+        '
+        Me.RadioButton8.AutoSize = True
+        Me.RadioButton8.Location = New System.Drawing.Point(31, 34)
+        Me.RadioButton8.Name = "RadioButton8"
+        Me.RadioButton8.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton8.TabIndex = 6
+        Me.RadioButton8.TabStop = True
+        Me.RadioButton8.Text = "RadioButton8"
+        Me.RadioButton8.UseVisualStyleBackColor = True
+        '
+        'RadioButton9
+        '
+        Me.RadioButton9.AutoSize = True
+        Me.RadioButton9.Location = New System.Drawing.Point(31, 59)
+        Me.RadioButton9.Name = "RadioButton9"
+        Me.RadioButton9.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton9.TabIndex = 7
+        Me.RadioButton9.TabStop = True
+        Me.RadioButton9.Text = "RadioButton9"
+        Me.RadioButton9.UseVisualStyleBackColor = True
+        '
         'AnimalesTest1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -149,14 +269,20 @@ Partial Class AnimalesTest1
         Me.BackgroundImage = Global.Ejercicio02_02.My.Resources.Resources.bgAnimales
         Me.ClientSize = New System.Drawing.Size(704, 484)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btnCorregir)
+        Me.Controls.Add(Me.gb2)
+        Me.Controls.Add(Me.gb3)
+        Me.Controls.Add(Me.gb1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "AnimalesTest1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AnimalesTest1"
+        Me.gb1.ResumeLayout(False)
+        Me.gb1.PerformLayout()
+        Me.gb2.ResumeLayout(False)
+        Me.gb2.PerformLayout()
+        Me.gb3.ResumeLayout(False)
+        Me.gb3.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -164,10 +290,10 @@ Partial Class AnimalesTest1
 
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents gb1 As GroupBox
+    Friend WithEvents gb2 As GroupBox
+    Friend WithEvents gb3 As GroupBox
+    Friend WithEvents btnCorregir As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents TestToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CiudadesToolStripMenuItem As ToolStripMenuItem
@@ -178,4 +304,13 @@ Partial Class AnimalesTest1
     Friend WithEvents HongosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Test1ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents RadioButton6 As RadioButton
+    Friend WithEvents RadioButton5 As RadioButton
+    Friend WithEvents RadioButton7 As RadioButton
+    Friend WithEvents RadioButton8 As RadioButton
+    Friend WithEvents RadioButton9 As RadioButton
 End Class
