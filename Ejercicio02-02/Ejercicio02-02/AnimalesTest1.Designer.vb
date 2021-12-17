@@ -45,6 +45,10 @@ Partial Class AnimalesTest1
         Me.RadioButton7 = New System.Windows.Forms.RadioButton()
         Me.RadioButton8 = New System.Windows.Forms.RadioButton()
         Me.RadioButton9 = New System.Windows.Forms.RadioButton()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.PrincipalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.gb1.SuspendLayout()
         Me.gb2.SuspendLayout()
         Me.gb3.SuspendLayout()
@@ -53,6 +57,7 @@ Partial Class AnimalesTest1
         '
         'gb1
         '
+        Me.gb1.Controls.Add(Me.Label1)
         Me.gb1.Controls.Add(Me.RadioButton3)
         Me.gb1.Controls.Add(Me.RadioButton2)
         Me.gb1.Controls.Add(Me.RadioButton1)
@@ -65,6 +70,7 @@ Partial Class AnimalesTest1
         '
         'gb2
         '
+        Me.gb2.Controls.Add(Me.Label2)
         Me.gb2.Controls.Add(Me.RadioButton4)
         Me.gb2.Controls.Add(Me.RadioButton6)
         Me.gb2.Controls.Add(Me.RadioButton5)
@@ -77,6 +83,7 @@ Partial Class AnimalesTest1
         '
         'gb3
         '
+        Me.gb3.Controls.Add(Me.Label3)
         Me.gb3.Controls.Add(Me.RadioButton7)
         Me.gb3.Controls.Add(Me.RadioButton8)
         Me.gb3.Controls.Add(Me.RadioButton9)
@@ -107,7 +114,7 @@ Partial Class AnimalesTest1
         '
         'TestToolStripMenuItem
         '
-        Me.TestToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CiudadesToolStripMenuItem, Me.PlantasToolStripMenuItem, Me.HongosToolStripMenuItem})
+        Me.TestToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CiudadesToolStripMenuItem, Me.PlantasToolStripMenuItem, Me.HongosToolStripMenuItem, Me.PrincipalToolStripMenuItem})
         Me.TestToolStripMenuItem.Name = "TestToolStripMenuItem"
         Me.TestToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.TestToolStripMenuItem.Text = "Test"
@@ -262,6 +269,39 @@ Partial Class AnimalesTest1
         Me.RadioButton9.Text = "RadioButton9"
         Me.RadioButton9.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(28, 16)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Label1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(28, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Label2"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(28, 18)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Label3"
+        '
+        'PrincipalToolStripMenuItem
+        '
+        Me.PrincipalToolStripMenuItem.Name = "PrincipalToolStripMenuItem"
+        Me.PrincipalToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PrincipalToolStripMenuItem.Text = "Principal"
+        '
         'AnimalesTest1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -313,4 +353,8 @@ Partial Class AnimalesTest1
     Friend WithEvents RadioButton7 As RadioButton
     Friend WithEvents RadioButton8 As RadioButton
     Friend WithEvents RadioButton9 As RadioButton
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents PrincipalToolStripMenuItem As ToolStripMenuItem
 End Class

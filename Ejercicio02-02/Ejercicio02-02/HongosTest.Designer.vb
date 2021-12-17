@@ -34,17 +34,21 @@ Partial Class HongosTest
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnCorregir = New System.Windows.Forms.Button()
         Me.gb2 = New System.Windows.Forms.GroupBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
         Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.gb3 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.RadioButton7 = New System.Windows.Forms.RadioButton()
         Me.RadioButton8 = New System.Windows.Forms.RadioButton()
         Me.RadioButton9 = New System.Windows.Forms.RadioButton()
         Me.gb1 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.PrincipalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.gb2.SuspendLayout()
         Me.gb3.SuspendLayout()
@@ -62,7 +66,7 @@ Partial Class HongosTest
         '
         'TestToolStripMenuItem
         '
-        Me.TestToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CiudadesToolStripMenuItem, Me.PlantasToolStripMenuItem, Me.HongosToolStripMenuItem})
+        Me.TestToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CiudadesToolStripMenuItem, Me.PlantasToolStripMenuItem, Me.HongosToolStripMenuItem, Me.PrincipalToolStripMenuItem})
         Me.TestToolStripMenuItem.Name = "TestToolStripMenuItem"
         Me.TestToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.TestToolStripMenuItem.Text = "Test"
@@ -120,7 +124,7 @@ Partial Class HongosTest
         '
         'btnCorregir
         '
-        Me.btnCorregir.Location = New System.Drawing.Point(560, 411)
+        Me.btnCorregir.Location = New System.Drawing.Point(589, 422)
         Me.btnCorregir.Name = "btnCorregir"
         Me.btnCorregir.Size = New System.Drawing.Size(97, 38)
         Me.btnCorregir.TabIndex = 6
@@ -129,15 +133,25 @@ Partial Class HongosTest
         '
         'gb2
         '
+        Me.gb2.Controls.Add(Me.Label2)
         Me.gb2.Controls.Add(Me.RadioButton4)
         Me.gb2.Controls.Add(Me.RadioButton6)
         Me.gb2.Controls.Add(Me.RadioButton5)
-        Me.gb2.Location = New System.Drawing.Point(47, 181)
+        Me.gb2.Location = New System.Drawing.Point(76, 192)
         Me.gb2.Name = "gb2"
         Me.gb2.Size = New System.Drawing.Size(489, 122)
         Me.gb2.TabIndex = 4
         Me.gb2.TabStop = False
         Me.gb2.Text = "Pregunta 2"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(28, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Label2"
         '
         'RadioButton4
         '
@@ -174,15 +188,25 @@ Partial Class HongosTest
         '
         'gb3
         '
+        Me.gb3.Controls.Add(Me.Label3)
         Me.gb3.Controls.Add(Me.RadioButton7)
         Me.gb3.Controls.Add(Me.RadioButton8)
         Me.gb3.Controls.Add(Me.RadioButton9)
-        Me.gb3.Location = New System.Drawing.Point(47, 326)
+        Me.gb3.Location = New System.Drawing.Point(76, 337)
         Me.gb3.Name = "gb3"
         Me.gb3.Size = New System.Drawing.Size(489, 122)
         Me.gb3.TabIndex = 5
         Me.gb3.TabStop = False
         Me.gb3.Text = "Pregunta 3"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(28, 18)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Label3"
         '
         'RadioButton7
         '
@@ -219,15 +243,25 @@ Partial Class HongosTest
         '
         'gb1
         '
+        Me.gb1.Controls.Add(Me.Label1)
         Me.gb1.Controls.Add(Me.RadioButton3)
         Me.gb1.Controls.Add(Me.RadioButton2)
         Me.gb1.Controls.Add(Me.RadioButton1)
-        Me.gb1.Location = New System.Drawing.Point(47, 36)
+        Me.gb1.Location = New System.Drawing.Point(76, 47)
         Me.gb1.Name = "gb1"
         Me.gb1.Size = New System.Drawing.Size(489, 122)
         Me.gb1.TabIndex = 3
         Me.gb1.TabStop = False
         Me.gb1.Text = "Pregunta 1"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(28, 16)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Label1"
         '
         'RadioButton3
         '
@@ -261,6 +295,12 @@ Partial Class HongosTest
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "RadioButton1"
         Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'PrincipalToolStripMenuItem
+        '
+        Me.PrincipalToolStripMenuItem.Name = "PrincipalToolStripMenuItem"
+        Me.PrincipalToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PrincipalToolStripMenuItem.Text = "Principal"
         '
         'HongosTest
         '
@@ -302,15 +342,19 @@ Partial Class HongosTest
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnCorregir As Button
     Friend WithEvents gb2 As GroupBox
+    Friend WithEvents Label2 As Label
     Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents RadioButton6 As RadioButton
     Friend WithEvents RadioButton5 As RadioButton
     Friend WithEvents gb3 As GroupBox
+    Friend WithEvents Label3 As Label
     Friend WithEvents RadioButton7 As RadioButton
     Friend WithEvents RadioButton8 As RadioButton
     Friend WithEvents RadioButton9 As RadioButton
     Friend WithEvents gb1 As GroupBox
+    Friend WithEvents Label1 As Label
     Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents PrincipalToolStripMenuItem As ToolStripMenuItem
 End Class
