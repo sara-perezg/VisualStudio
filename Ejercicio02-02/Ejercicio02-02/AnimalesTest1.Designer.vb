@@ -26,7 +26,6 @@ Partial Class AnimalesTest1
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.TestToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CiudadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -69,21 +68,12 @@ Partial Class AnimalesTest1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(471, 438)
+        Me.Button1.Location = New System.Drawing.Point(574, 437)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(585, 438)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
@@ -105,26 +95,26 @@ Partial Class AnimalesTest1
         '
         Me.CiudadesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Test1ToolStripMenuItem, Me.Test2ToolStripMenuItem})
         Me.CiudadesToolStripMenuItem.Name = "CiudadesToolStripMenuItem"
-        Me.CiudadesToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
+        Me.CiudadesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CiudadesToolStripMenuItem.Text = "Animales"
         '
         'Test1ToolStripMenuItem
         '
         Me.Test1ToolStripMenuItem.Name = "Test1ToolStripMenuItem"
-        Me.Test1ToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
+        Me.Test1ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Test1ToolStripMenuItem.Text = "Test1"
         '
         'Test2ToolStripMenuItem
         '
         Me.Test2ToolStripMenuItem.Name = "Test2ToolStripMenuItem"
-        Me.Test2ToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
+        Me.Test2ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Test2ToolStripMenuItem.Text = "Test2"
         '
         'PlantasToolStripMenuItem
         '
         Me.PlantasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Test1ToolStripMenuItem1})
         Me.PlantasToolStripMenuItem.Name = "PlantasToolStripMenuItem"
-        Me.PlantasToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
+        Me.PlantasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PlantasToolStripMenuItem.Text = "Plantas"
         '
         'Test1ToolStripMenuItem1
@@ -137,7 +127,7 @@ Partial Class AnimalesTest1
         '
         Me.HongosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Test1ToolStripMenuItem2})
         Me.HongosToolStripMenuItem.Name = "HongosToolStripMenuItem"
-        Me.HongosToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
+        Me.HongosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HongosToolStripMenuItem.Text = "Hongos"
         '
         'Test1ToolStripMenuItem2
@@ -156,9 +146,9 @@ Partial Class AnimalesTest1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Ejercicio02_02.My.Resources.Resources.bgAnimales
         Me.ClientSize = New System.Drawing.Size(704, 484)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
@@ -178,7 +168,6 @@ Partial Class AnimalesTest1
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents TestToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CiudadesToolStripMenuItem As ToolStripMenuItem

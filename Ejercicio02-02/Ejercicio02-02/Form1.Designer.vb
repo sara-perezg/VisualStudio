@@ -28,10 +28,10 @@ Partial Class Form1
         Me.Test1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Test2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PlantasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HongosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Test1ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HongosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Test1ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,13 +61,13 @@ Partial Class Form1
         'Test1ToolStripMenuItem
         '
         Me.Test1ToolStripMenuItem.Name = "Test1ToolStripMenuItem"
-        Me.Test1ToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
+        Me.Test1ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Test1ToolStripMenuItem.Text = "Test1"
         '
         'Test2ToolStripMenuItem
         '
         Me.Test2ToolStripMenuItem.Name = "Test2ToolStripMenuItem"
-        Me.Test2ToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
+        Me.Test2ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Test2ToolStripMenuItem.Text = "Test2"
         '
         'PlantasToolStripMenuItem
@@ -77,6 +77,12 @@ Partial Class Form1
         Me.PlantasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PlantasToolStripMenuItem.Text = "Plantas"
         '
+        'Test1ToolStripMenuItem1
+        '
+        Me.Test1ToolStripMenuItem1.Name = "Test1ToolStripMenuItem1"
+        Me.Test1ToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.Test1ToolStripMenuItem1.Text = "Test1"
+        '
         'HongosToolStripMenuItem
         '
         Me.HongosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Test1ToolStripMenuItem2})
@@ -84,23 +90,17 @@ Partial Class Form1
         Me.HongosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HongosToolStripMenuItem.Text = "Hongos"
         '
-        'SalirToolStripMenuItem
-        '
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.SalirToolStripMenuItem.Text = "Salir"
-        '
-        'Test1ToolStripMenuItem1
-        '
-        Me.Test1ToolStripMenuItem1.Name = "Test1ToolStripMenuItem1"
-        Me.Test1ToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
-        Me.Test1ToolStripMenuItem1.Text = "Test1"
-        '
         'Test1ToolStripMenuItem2
         '
         Me.Test1ToolStripMenuItem2.Name = "Test1ToolStripMenuItem2"
         Me.Test1ToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.Test1ToolStripMenuItem2.Text = "Test1"
+        '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'Form1
         '

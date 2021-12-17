@@ -73,11 +73,29 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalesTest1.Designer.vb">
+      <DependentUpon>AnimalesTest1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalesTest1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalesTest2.Designer.vb">
+      <DependentUpon>AnimalesTest2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalesTest2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HongosTest.Designer.vb">
+      <DependentUpon>HongosTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HongosTest.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -95,16 +113,34 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PlantasTest.Designer.vb">
+      <DependentUpon>PlantasTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlantasTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AnimalesTest1.resx">
+      <DependentUpon>AnimalesTest1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalesTest2.resx">
+      <DependentUpon>AnimalesTest2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HongosTest.resx">
+      <DependentUpon>HongosTest.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlantasTest.resx">
+      <DependentUpon>PlantasTest.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +157,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgAnimales.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgHongos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bgPlantas.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

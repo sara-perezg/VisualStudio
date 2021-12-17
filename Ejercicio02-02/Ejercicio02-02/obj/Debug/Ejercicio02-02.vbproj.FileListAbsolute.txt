@@ -10,3 +10,7 @@ C:\Users\sarap\Github\VisualStudio\Ejercicio02-02\Ejercicio02-02\obj\Debug\Ejerc
 C:\Users\sarap\Github\VisualStudio\Ejercicio02-02\Ejercicio02-02\obj\Debug\Ejercicio02-02.exe
 C:\Users\sarap\Github\VisualStudio\Ejercicio02-02\Ejercicio02-02\obj\Debug\Ejercicio02-02.xml
 C:\Users\sarap\Github\VisualStudio\Ejercicio02-02\Ejercicio02-02\obj\Debug\Ejercicio02-02.pdb
+C:\Users\sarap\Github\VisualStudio\Ejercicio02-02\Ejercicio02-02\obj\Debug\Ejercicio02_02.AnimalesTest1.resources
+C:\Users\sarap\Github\VisualStudio\Ejercicio02-02\Ejercicio02-02\obj\Debug\Ejercicio02_02.AnimalesTest2.resources
+C:\Users\sarap\Github\VisualStudio\Ejercicio02-02\Ejercicio02-02\obj\Debug\Ejercicio02_02.HongosTest.resources
+C:\Users\sarap\Github\VisualStudio\Ejercicio02-02\Ejercicio02-02\obj\Debug\Ejercicio02_02.PlantasTest.resources
