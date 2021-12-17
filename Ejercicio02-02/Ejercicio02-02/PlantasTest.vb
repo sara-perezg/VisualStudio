@@ -1,4 +1,6 @@
 ﻿Public Class PlantasTest
+
+    Public score As Integer
     Private Sub PlantasTest_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.BackgroundImageLayout = ImageLayout.Stretch
     End Sub
@@ -28,5 +30,21 @@
     Private Sub PrincipalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrincipalToolStripMenuItem.Click
         Form1.Show()
         Me.Hide()
+    End Sub
+
+
+    Private Sub btnCorregir_Click_1(sender As Object, e As EventArgs) Handles btnCorregir.Click
+        If RadioButton1.Checked = True Then
+            Form1.totalScore = Form1.totalScore + 1
+        End If
+
+        If RadioButton6.Checked = True Then
+            Form1.totalScore = Form1.totalScore + 1
+        End If
+        If RadioButton8.Checked = True Then
+            Form1.totalScore = Form1.totalScore + 1
+        End If
+
+        MsgBox("Test corregido, vuelva a la pantalla de inicio para ver su puntiacion")
     End Sub
 End Class

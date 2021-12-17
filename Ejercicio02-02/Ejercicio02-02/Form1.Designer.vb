@@ -32,7 +32,7 @@ Partial Class Form1
         Me.HongosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Test1ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnPuntuacion = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -56,45 +56,45 @@ Partial Class Form1
         '
         Me.CiudadesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Test1ToolStripMenuItem, Me.Test2ToolStripMenuItem})
         Me.CiudadesToolStripMenuItem.Name = "CiudadesToolStripMenuItem"
-        Me.CiudadesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CiudadesToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
         Me.CiudadesToolStripMenuItem.Text = "Animales"
         '
         'Test1ToolStripMenuItem
         '
         Me.Test1ToolStripMenuItem.Name = "Test1ToolStripMenuItem"
-        Me.Test1ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Test1ToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
         Me.Test1ToolStripMenuItem.Text = "Test1"
         '
         'Test2ToolStripMenuItem
         '
         Me.Test2ToolStripMenuItem.Name = "Test2ToolStripMenuItem"
-        Me.Test2ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Test2ToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
         Me.Test2ToolStripMenuItem.Text = "Test2"
         '
         'PlantasToolStripMenuItem
         '
         Me.PlantasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Test1ToolStripMenuItem1})
         Me.PlantasToolStripMenuItem.Name = "PlantasToolStripMenuItem"
-        Me.PlantasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PlantasToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
         Me.PlantasToolStripMenuItem.Text = "Plantas"
         '
         'Test1ToolStripMenuItem1
         '
         Me.Test1ToolStripMenuItem1.Name = "Test1ToolStripMenuItem1"
-        Me.Test1ToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.Test1ToolStripMenuItem1.Size = New System.Drawing.Size(100, 22)
         Me.Test1ToolStripMenuItem1.Text = "Test1"
         '
         'HongosToolStripMenuItem
         '
         Me.HongosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Test1ToolStripMenuItem2})
         Me.HongosToolStripMenuItem.Name = "HongosToolStripMenuItem"
-        Me.HongosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HongosToolStripMenuItem.Size = New System.Drawing.Size(123, 22)
         Me.HongosToolStripMenuItem.Text = "Hongos"
         '
         'Test1ToolStripMenuItem2
         '
         Me.Test1ToolStripMenuItem2.Name = "Test1ToolStripMenuItem2"
-        Me.Test1ToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.Test1ToolStripMenuItem2.Size = New System.Drawing.Size(100, 22)
         Me.Test1ToolStripMenuItem2.Text = "Test1"
         '
         'SalirToolStripMenuItem
@@ -103,14 +103,14 @@ Partial Class Form1
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
-        'Label1
+        'btnPuntuacion
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(320, 240)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Label1"
+        Me.btnPuntuacion.Location = New System.Drawing.Point(284, 229)
+        Me.btnPuntuacion.Name = "btnPuntuacion"
+        Me.btnPuntuacion.Size = New System.Drawing.Size(101, 45)
+        Me.btnPuntuacion.TabIndex = 2
+        Me.btnPuntuacion.Text = "Puntuacion"
+        Me.btnPuntuacion.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -119,7 +119,7 @@ Partial Class Form1
         Me.BackgroundImage = Global.Ejercicio02_02.My.Resources.Resources.bg
         Me.ClientSize = New System.Drawing.Size(704, 484)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnPuntuacion)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MainMenuStrip = Me.MenuStrip1
@@ -143,5 +143,5 @@ Partial Class Form1
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Test1ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents Test1ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents Label1 As Label
+    Friend WithEvents btnPuntuacion As Button
 End Class
