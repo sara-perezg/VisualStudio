@@ -22,6 +22,7 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.panelLateral = New System.Windows.Forms.Panel()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.panelSubmenuMedia2 = New System.Windows.Forms.Panel()
@@ -43,14 +44,17 @@ Partial Class Form1
         Me.Button11 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
         Me.panelLateral.SuspendLayout()
         Me.panelSubmenuMedia2.SuspendLayout()
         Me.panelSubmenuMedia.SuspendLayout()
         Me.panelLogo.SuspendLayout()
+        Me.panelPlayer.SuspendLayout()
         Me.panelSubmenuMedia3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelLateral
@@ -261,6 +265,7 @@ Partial Class Form1
         'panelPlayer
         '
         Me.panelPlayer.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.panelPlayer.Controls.Add(Me.AxWindowsMediaPlayer1)
         Me.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.panelPlayer.Location = New System.Drawing.Point(200, 453)
         Me.panelPlayer.Name = "panelPlayer"
@@ -341,6 +346,16 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'AxWindowsMediaPlayer1
+        '
+        Me.AxWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.AxWindowsMediaPlayer1.Enabled = True
+        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(0, 0)
+        Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
+        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(732, 100)
+        Me.AxWindowsMediaPlayer1.TabIndex = 0
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -357,10 +372,12 @@ Partial Class Form1
         Me.panelSubmenuMedia2.ResumeLayout(False)
         Me.panelSubmenuMedia.ResumeLayout(False)
         Me.panelLogo.ResumeLayout(False)
+        Me.panelPlayer.ResumeLayout(False)
         Me.panelSubmenuMedia3.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -386,4 +403,5 @@ Partial Class Form1
     Friend WithEvents Button11 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents AxWindowsMediaPlayer1 As AxWMPLib.AxWindowsMediaPlayer
 End Class

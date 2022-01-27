@@ -10,3 +10,8 @@ C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\Ejercic
 C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\Ejercicio2-03.exe
 C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\Ejercicio2-03.xml
 C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\Ejercicio2-03.pdb
+C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\bin\Debug\Interop.WMPLib.dll
+C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\Interop.WMPLib.dll
+C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\Ejercicio2-03.vbproj.ResolveComReference.cache
