@@ -27,5 +27,10 @@ Ejercicio2-03
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Ejercicio2_03.My.Resources.Resources.img3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

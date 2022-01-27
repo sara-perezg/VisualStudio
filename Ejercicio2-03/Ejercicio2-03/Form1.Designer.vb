@@ -36,25 +36,28 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnMedia = New System.Windows.Forms.Button()
         Me.panelLogo = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.panelPlayer = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.panelSubmenuMedia3 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.panelLateral.SuspendLayout()
         Me.panelSubmenuMedia2.SuspendLayout()
         Me.panelSubmenuMedia.SuspendLayout()
         Me.panelLogo.SuspendLayout()
+        Me.panelSubmenuMedia3.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'panelLateral
         '
         Me.panelLateral.AutoScroll = True
         Me.panelLateral.BackColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(7, Byte), Integer), CType(CType(17, Byte), Integer))
-        Me.panelLateral.Controls.Add(Me.Panel1)
+        Me.panelLateral.Controls.Add(Me.panelSubmenuMedia3)
         Me.panelLateral.Controls.Add(Me.Button7)
         Me.panelLateral.Controls.Add(Me.panelSubmenuMedia2)
         Me.panelLateral.Controls.Add(Me.Button4)
@@ -74,7 +77,7 @@ Partial Class Form1
         Me.Button7.FlatAppearance.BorderSize = 0
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button7.Location = New System.Drawing.Point(0, 478)
+        Me.Button7.Location = New System.Drawing.Point(0, 474)
         Me.Button7.Name = "Button7"
         Me.Button7.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
         Me.Button7.Size = New System.Drawing.Size(179, 45)
@@ -90,7 +93,7 @@ Partial Class Form1
         Me.panelSubmenuMedia2.Dock = System.Windows.Forms.DockStyle.Top
         Me.panelSubmenuMedia2.Location = New System.Drawing.Point(0, 395)
         Me.panelSubmenuMedia2.Name = "panelSubmenuMedia2"
-        Me.panelSubmenuMedia2.Size = New System.Drawing.Size(179, 83)
+        Me.panelSubmenuMedia2.Size = New System.Drawing.Size(179, 79)
         Me.panelSubmenuMedia2.TabIndex = 4
         '
         'Button8
@@ -255,17 +258,6 @@ Partial Class Form1
         Me.panelLogo.Size = New System.Drawing.Size(179, 100)
         Me.panelLogo.TabIndex = 0
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.Ejercicio2_03.My.Resources.Resources.img1
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(179, 100)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'panelPlayer
         '
         Me.panelPlayer.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer))
@@ -275,15 +267,25 @@ Partial Class Form1
         Me.panelPlayer.Size = New System.Drawing.Size(732, 100)
         Me.panelPlayer.TabIndex = 1
         '
-        'Panel1
+        'panelSubmenuMedia3
         '
-        Me.Panel1.Controls.Add(Me.Button11)
-        Me.Panel1.Controls.Add(Me.Button10)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 523)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(179, 100)
-        Me.Panel1.TabIndex = 6
+        Me.panelSubmenuMedia3.Controls.Add(Me.Button11)
+        Me.panelSubmenuMedia3.Controls.Add(Me.Button10)
+        Me.panelSubmenuMedia3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelSubmenuMedia3.Location = New System.Drawing.Point(0, 519)
+        Me.panelSubmenuMedia3.Name = "panelSubmenuMedia3"
+        Me.panelSubmenuMedia3.Size = New System.Drawing.Size(179, 100)
+        Me.panelSubmenuMedia3.TabIndex = 6
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.PictureBox2)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(200, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(732, 453)
+        Me.Panel2.TabIndex = 2
         '
         'Button10
         '
@@ -317,14 +319,27 @@ Partial Class Form1
         Me.Button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button11.UseVisualStyleBackColor = False
         '
-        'Panel2
+        'PictureBox2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(200, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(732, 453)
-        Me.Panel2.TabIndex = 2
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox2.Image = Global.Ejercicio2_03.My.Resources.Resources.img3
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(732, 453)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.Ejercicio2_03.My.Resources.Resources.img1
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(179, 100)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
@@ -342,8 +357,10 @@ Partial Class Form1
         Me.panelSubmenuMedia2.ResumeLayout(False)
         Me.panelSubmenuMedia.ResumeLayout(False)
         Me.panelLogo.ResumeLayout(False)
+        Me.panelSubmenuMedia3.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -364,8 +381,9 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents panelPlayer As Panel
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents panelSubmenuMedia3 As Panel
+    Friend WithEvents Panel2 As Panel
     Friend WithEvents Button11 As Button
     Friend WithEvents Button10 As Button
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
