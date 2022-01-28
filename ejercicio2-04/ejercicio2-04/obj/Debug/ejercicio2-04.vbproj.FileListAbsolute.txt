@@ -1,0 +1,12 @@
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\bin\Debug\ejercicio2-04.exe.config
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\bin\Debug\ejercicio2-04.exe
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\bin\Debug\ejercicio2-04.pdb
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\bin\Debug\ejercicio2-04.xml
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2-04.vbproj.AssemblyReference.cache
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2_04.Form1.resources
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2_04.Resources.resources
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2-04.vbproj.GenerateResource.cache
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2-04.vbproj.CoreCompileInputs.cache
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2-04.exe
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2-04.xml
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2-04.pdb

@@ -25,6 +25,8 @@ Partial Class Form1
         Me.PanelBarraTitulo = New System.Windows.Forms.Panel()
         Me.PanelMenu = New System.Windows.Forms.Panel()
         Me.panelContenedor = New System.Windows.Forms.Panel()
+        Me.btnMenu = New System.Windows.Forms.Button()
+        Me.PanelMenu.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelBarraTitulo
@@ -39,6 +41,7 @@ Partial Class Form1
         'PanelMenu
         '
         Me.PanelMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.PanelMenu.Controls.Add(Me.btnMenu)
         Me.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelMenu.Location = New System.Drawing.Point(0, 40)
         Me.PanelMenu.Name = "PanelMenu"
@@ -53,6 +56,17 @@ Partial Class Form1
         Me.panelContenedor.Size = New System.Drawing.Size(930, 560)
         Me.panelContenedor.TabIndex = 2
         '
+        'btnMenu
+        '
+        Me.btnMenu.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMenu.Location = New System.Drawing.Point(182, 6)
+        Me.btnMenu.Name = "btnMenu"
+        Me.btnMenu.Size = New System.Drawing.Size(32, 32)
+        Me.btnMenu.TabIndex = 0
+        Me.btnMenu.Text = "Button1"
+        Me.btnMenu.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -64,6 +78,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.PanelMenu.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -71,4 +86,5 @@ Partial Class Form1
     Friend WithEvents PanelBarraTitulo As Panel
     Friend WithEvents PanelMenu As Panel
     Friend WithEvents panelContenedor As Panel
+    Friend WithEvents btnMenu As Button
 End Class
