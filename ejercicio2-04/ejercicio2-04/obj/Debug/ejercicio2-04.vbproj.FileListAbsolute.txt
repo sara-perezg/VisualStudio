@@ -10,3 +10,4 @@ C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercic
 C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2-04.exe
 C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2-04.xml
 C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2-04.pdb
+C:\Users\sarap\Github\VisualStudio\ejercicio2-04\ejercicio2-04\obj\Debug\ejercicio2_04.FormProductos.resources
