@@ -15,3 +15,4 @@ C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\bin\Debug\AxInter
 C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\Interop.WMPLib.dll
 C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\Ejercicio2-03.vbproj.ResolveComReference.cache
+C:\Users\sarap\Github\VisualStudio\Ejercicio2-03\Ejercicio2-03\obj\Debug\Ejercicio2_03.Form4.resources
