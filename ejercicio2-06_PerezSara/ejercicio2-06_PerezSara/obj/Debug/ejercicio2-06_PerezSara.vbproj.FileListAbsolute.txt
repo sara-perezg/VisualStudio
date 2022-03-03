@@ -1,0 +1,14 @@
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\bin\Debug\ejercicio2-06_PerezSara.exe.config
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\bin\Debug\ejercicio2-06_PerezSara.exe
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\bin\Debug\ejercicio2-06_PerezSara.pdb
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\bin\Debug\ejercicio2-06_PerezSara.xml
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\obj\Debug\ejercicio2-06_PerezSara.vbproj.AssemblyReference.cache
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\obj\Debug\ejercicio2_06_PerezSara.Form1.resources
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\obj\Debug\ejercicio2_06_PerezSara.Resources.resources
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\obj\Debug\ejercicio2-06_PerezSara.vbproj.GenerateResource.cache
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\obj\Debug\ejercicio2-06_PerezSara.vbproj.CoreCompileInputs.cache
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\obj\Debug\ejercicio2-06_PerezSara.vbproj.CopyComplete
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\obj\Debug\ejercicio2-06_PerezSara.exe
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\obj\Debug\ejercicio2-06_PerezSara.xml
+C:\Users\sarap\Github\VisualStudio\ejercicio2-06_PerezSara\ejercicio2-06_PerezSara\obj\Debug\ejercicio2-06_PerezSara.pdb
