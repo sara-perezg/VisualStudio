@@ -24,6 +24,9 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.panelLateral = New System.Windows.Forms.Panel()
+        Me.panelSubmenuMedia3 = New System.Windows.Forms.Panel()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.panelSubmenuMedia2 = New System.Windows.Forms.Panel()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -37,24 +40,21 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnMedia = New System.Windows.Forms.Button()
         Me.panelLogo = New System.Windows.Forms.Panel()
-        Me.panelPlayer = New System.Windows.Forms.Panel()
-        Me.panelSubmenuMedia3 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.panelPlayer = New System.Windows.Forms.Panel()
         Me.AxWindowsMediaPlayer1 = New AxWMPLib.AxWindowsMediaPlayer()
+        Me.PanelChildForm = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.panelLateral.SuspendLayout()
+        Me.panelSubmenuMedia3.SuspendLayout()
         Me.panelSubmenuMedia2.SuspendLayout()
         Me.panelSubmenuMedia.SuspendLayout()
         Me.panelLogo.SuspendLayout()
-        Me.panelPlayer.SuspendLayout()
-        Me.panelSubmenuMedia3.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panelPlayer.SuspendLayout()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelChildForm.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelLateral
@@ -73,6 +73,48 @@ Partial Class Form1
         Me.panelLateral.Name = "panelLateral"
         Me.panelLateral.Size = New System.Drawing.Size(200, 553)
         Me.panelLateral.TabIndex = 0
+        '
+        'panelSubmenuMedia3
+        '
+        Me.panelSubmenuMedia3.Controls.Add(Me.Button11)
+        Me.panelSubmenuMedia3.Controls.Add(Me.Button10)
+        Me.panelSubmenuMedia3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.panelSubmenuMedia3.Location = New System.Drawing.Point(0, 519)
+        Me.panelSubmenuMedia3.Name = "panelSubmenuMedia3"
+        Me.panelSubmenuMedia3.Size = New System.Drawing.Size(179, 100)
+        Me.panelSubmenuMedia3.TabIndex = 6
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button11.Location = New System.Drawing.Point(0, 40)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.Button11.Size = New System.Drawing.Size(179, 40)
+        Me.Button11.TabIndex = 5
+        Me.Button11.Text = "Button11"
+        Me.Button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Button10.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button10.Location = New System.Drawing.Point(0, 0)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.Button10.Size = New System.Drawing.Size(179, 40)
+        Me.Button10.TabIndex = 4
+        Me.Button10.Text = "Button10"
+        Me.Button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button10.UseVisualStyleBackColor = False
         '
         'Button7
         '
@@ -262,6 +304,17 @@ Partial Class Form1
         Me.panelLogo.Size = New System.Drawing.Size(179, 100)
         Me.panelLogo.TabIndex = 0
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.Ejercicio2_03.My.Resources.Resources.img1
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(179, 100)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'panelPlayer
         '
         Me.panelPlayer.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(21, Byte), Integer), CType(CType(32, Byte), Integer))
@@ -272,57 +325,25 @@ Partial Class Form1
         Me.panelPlayer.Size = New System.Drawing.Size(732, 100)
         Me.panelPlayer.TabIndex = 1
         '
-        'panelSubmenuMedia3
+        'AxWindowsMediaPlayer1
         '
-        Me.panelSubmenuMedia3.Controls.Add(Me.Button11)
-        Me.panelSubmenuMedia3.Controls.Add(Me.Button10)
-        Me.panelSubmenuMedia3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.panelSubmenuMedia3.Location = New System.Drawing.Point(0, 519)
-        Me.panelSubmenuMedia3.Name = "panelSubmenuMedia3"
-        Me.panelSubmenuMedia3.Size = New System.Drawing.Size(179, 100)
-        Me.panelSubmenuMedia3.TabIndex = 6
+        Me.AxWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.AxWindowsMediaPlayer1.Enabled = True
+        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(0, 0)
+        Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
+        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(732, 100)
+        Me.AxWindowsMediaPlayer1.TabIndex = 0
         '
-        'Panel2
+        'PanelChildForm
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(200, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(732, 453)
-        Me.Panel2.TabIndex = 2
-        '
-        'Button10
-        '
-        Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.Button10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button10.Location = New System.Drawing.Point(0, 0)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button10.Size = New System.Drawing.Size(179, 40)
-        Me.Button10.TabIndex = 4
-        Me.Button10.Text = "Button10"
-        Me.Button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button10.UseVisualStyleBackColor = False
-        '
-        'Button11
-        '
-        Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button11.Location = New System.Drawing.Point(0, 40)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.Button11.Size = New System.Drawing.Size(179, 40)
-        Me.Button11.TabIndex = 5
-        Me.Button11.Text = "Button11"
-        Me.Button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button11.UseVisualStyleBackColor = False
+        Me.PanelChildForm.BackColor = System.Drawing.Color.FromArgb(CType(CType(2, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.PanelChildForm.Controls.Add(Me.PictureBox2)
+        Me.PanelChildForm.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelChildForm.Location = New System.Drawing.Point(200, 0)
+        Me.PanelChildForm.Name = "PanelChildForm"
+        Me.PanelChildForm.Size = New System.Drawing.Size(732, 453)
+        Me.PanelChildForm.TabIndex = 2
         '
         'PictureBox2
         '
@@ -335,33 +356,12 @@ Partial Class Form1
         Me.PictureBox2.TabIndex = 0
         Me.PictureBox2.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.Ejercicio2_03.My.Resources.Resources.img1
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(179, 100)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'AxWindowsMediaPlayer1
-        '
-        Me.AxWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AxWindowsMediaPlayer1.Enabled = True
-        Me.AxWindowsMediaPlayer1.Location = New System.Drawing.Point(0, 0)
-        Me.AxWindowsMediaPlayer1.Name = "AxWindowsMediaPlayer1"
-        Me.AxWindowsMediaPlayer1.OcxState = CType(resources.GetObject("AxWindowsMediaPlayer1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxWindowsMediaPlayer1.Size = New System.Drawing.Size(732, 100)
-        Me.AxWindowsMediaPlayer1.TabIndex = 0
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(932, 553)
-        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.PanelChildForm)
         Me.Controls.Add(Me.panelPlayer)
         Me.Controls.Add(Me.panelLateral)
         Me.MinimumSize = New System.Drawing.Size(950, 600)
@@ -369,15 +369,15 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.panelLateral.ResumeLayout(False)
+        Me.panelSubmenuMedia3.ResumeLayout(False)
         Me.panelSubmenuMedia2.ResumeLayout(False)
         Me.panelSubmenuMedia.ResumeLayout(False)
         Me.panelLogo.ResumeLayout(False)
-        Me.panelPlayer.ResumeLayout(False)
-        Me.panelSubmenuMedia3.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panelPlayer.ResumeLayout(False)
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelChildForm.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -399,7 +399,7 @@ Partial Class Form1
     Friend WithEvents Button7 As Button
     Friend WithEvents panelPlayer As Panel
     Friend WithEvents panelSubmenuMedia3 As Panel
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PanelChildForm As Panel
     Friend WithEvents Button11 As Button
     Friend WithEvents Button10 As Button
     Friend WithEvents PictureBox2 As PictureBox
