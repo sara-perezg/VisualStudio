@@ -35,11 +35,12 @@ Partial Class Form1
         '
         'btnCargarSolo
         '
-        Me.btnCargarSolo.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnCargarSolo.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnCargarSolo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCargarSolo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCargarSolo.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCargarSolo.Location = New System.Drawing.Point(511, 12)
+        Me.btnCargarSolo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnCargarSolo.Location = New System.Drawing.Point(450, 130)
         Me.btnCargarSolo.Name = "btnCargarSolo"
         Me.btnCargarSolo.Size = New System.Drawing.Size(209, 99)
         Me.btnCargarSolo.TabIndex = 0
@@ -56,7 +57,7 @@ Partial Class Form1
         '
         'txtArchivos
         '
-        Me.txtArchivos.Location = New System.Drawing.Point(36, 165)
+        Me.txtArchivos.Location = New System.Drawing.Point(36, 200)
         Me.txtArchivos.Multiline = True
         Me.txtArchivos.Name = "txtArchivos"
         Me.txtArchivos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -71,49 +72,51 @@ Partial Class Form1
         'lbEstado
         '
         Me.lbEstado.AutoSize = True
-        Me.lbEstado.Font = New System.Drawing.Font("Microsoft Tai Le", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbEstado.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lbEstado.Location = New System.Drawing.Point(508, 165)
+        Me.lbEstado.Font = New System.Drawing.Font("Microsoft Tai Le", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbEstado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbEstado.Location = New System.Drawing.Point(44, 129)
         Me.lbEstado.Name = "lbEstado"
-        Me.lbEstado.Size = New System.Drawing.Size(106, 23)
+        Me.lbEstado.Size = New System.Drawing.Size(116, 28)
         Me.lbEstado.TabIndex = 3
         Me.lbEstado.Text = "Estado: 0%"
         '
         'lbEncontrados
         '
         Me.lbEncontrados.AutoSize = True
-        Me.lbEncontrados.Font = New System.Drawing.Font("Microsoft Tai Le", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbEncontrados.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.lbEncontrados.Location = New System.Drawing.Point(508, 203)
+        Me.lbEncontrados.Font = New System.Drawing.Font("Microsoft Tai Le", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbEncontrados.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.lbEncontrados.Location = New System.Drawing.Point(44, 167)
         Me.lbEncontrados.Name = "lbEncontrados"
-        Me.lbEncontrados.Size = New System.Drawing.Size(224, 23)
+        Me.lbEncontrados.Size = New System.Drawing.Size(240, 28)
         Me.lbEncontrados.TabIndex = 4
         Me.lbEncontrados.Text = "Archivos encontrados: 0"
         '
         'btnSeleccionar
         '
-        Me.btnSeleccionar.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnSeleccionar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnSeleccionar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnSeleccionar.FlatAppearance.BorderSize = 0
         Me.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSeleccionar.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSeleccionar.ForeColor = System.Drawing.SystemColors.HighlightText
+        Me.btnSeleccionar.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSeleccionar.ForeColor = System.Drawing.Color.Maroon
         Me.btnSeleccionar.Location = New System.Drawing.Point(36, 12)
         Me.btnSeleccionar.Name = "btnSeleccionar"
-        Me.btnSeleccionar.Size = New System.Drawing.Size(183, 49)
+        Me.btnSeleccionar.Size = New System.Drawing.Size(393, 49)
         Me.btnSeleccionar.TabIndex = 5
         Me.btnSeleccionar.Text = "Seleccionar carpeta"
         Me.btnSeleccionar.UseVisualStyleBackColor = False
         '
         'btnCancelar
         '
-        Me.btnCancelar.BackColor = System.Drawing.Color.IndianRed
+        Me.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FlatAppearance.BorderSize = 0
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Tai Le", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelar.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.btnCancelar.Location = New System.Drawing.Point(247, 12)
+        Me.btnCancelar.Font = New System.Drawing.Font("Microsoft Tai Le", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.ForeColor = System.Drawing.Color.Maroon
+        Me.btnCancelar.Location = New System.Drawing.Point(450, 12)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(182, 49)
+        Me.btnCancelar.Size = New System.Drawing.Size(209, 99)
         Me.btnCancelar.TabIndex = 6
         Me.btnCancelar.Text = "Cancelar operación"
         Me.btnCancelar.UseVisualStyleBackColor = False
@@ -122,8 +125,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DimGray
-        Me.ClientSize = New System.Drawing.Size(763, 444)
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ClientSize = New System.Drawing.Size(674, 453)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnSeleccionar)
         Me.Controls.Add(Me.lbEncontrados)
